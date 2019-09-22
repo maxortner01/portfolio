@@ -1,0 +1,161 @@
+\hypertarget{classpcs_1_1Texture}{}\section{pcs\+:\+:Texture Class Reference}
+\label{classpcs_1_1Texture}\index{pcs\+::\+Texture@{pcs\+::\+Texture}}
+
+
+Represents a texture.  
+
+
+
+
+{\ttfamily \#include $<$Texture.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:Texture\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classpcs_1_1Texture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:Texture\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classpcs_1_1Texture__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1Texture_a1f0e7c4ed23cf395b082cc5cc56497a4}{Texture} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{classpcs_1_1Texture}{Texture} object. \end{DoxyCompactList}\item 
+\hyperlink{classpcs_1_1Texture_a7d85ec721e688ee7313bd858477fbcf2}{Texture} (const char $\ast$location)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{classpcs_1_1Texture}{Texture} object and loads from a file location. \end{DoxyCompactList}\item 
+\hyperlink{classpcs_1_1Texture_a2267bb7d920e784a1915ae14e5b5916b}{$\sim$\+Texture} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \hyperlink{classpcs_1_1Texture}{Texture} object. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1Texture_aad31d75ae69be153300bd87e244afa54}{destroy} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \hyperlink{classpcs_1_1Texture}{Texture} object. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1Texture_a25574cca4b0d13916950f708acc3e1c9}{bind} (unsigned int layer=0)
+\begin{DoxyCompactList}\small\item\em Binds the texture at specified layer. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1Texture_a8893d66d0d51a3d7ae8b6ec70f7076a1}{unbind} () const
+\begin{DoxyCompactList}\small\item\em Unbinds the \hyperlink{classpcs_1_1Texture}{Texture} object. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1Texture_a7cedaff72d12b58ace397f7ef4de23f3}{load\+From\+File} (const char $\ast$location)
+\begin{DoxyCompactList}\small\item\em Loads the image from a given file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classpcs_1_1Texture_a6308be3376398be4188f5bbed20c5a90}{current\+\_\+layer}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents a texture. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpcs_1_1Texture_a1f0e7c4ed23cf395b082cc5cc56497a4}\label{classpcs_1_1Texture_a1f0e7c4ed23cf395b082cc5cc56497a4}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily pcs\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \hyperlink{classpcs_1_1Texture}{Texture} object. 
+
+\mbox{\Hypertarget{classpcs_1_1Texture_a7d85ec721e688ee7313bd858477fbcf2}\label{classpcs_1_1Texture_a7d85ec721e688ee7313bd858477fbcf2}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{Texture()}{Texture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily pcs\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{location }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \hyperlink{classpcs_1_1Texture}{Texture} object and loads from a file location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Location of file to load from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1Texture_a2267bb7d920e784a1915ae14e5b5916b}\label{classpcs_1_1Texture_a2267bb7d920e784a1915ae14e5b5916b}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!````~Texture@{$\sim$\+Texture}}
+\index{````~Texture@{$\sim$\+Texture}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{$\sim$\+Texture()}{~Texture()}}
+{\footnotesize\ttfamily pcs\+::\+Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \hyperlink{classpcs_1_1Texture}{Texture} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1Texture_a25574cca4b0d13916950f708acc3e1c9}\label{classpcs_1_1Texture_a25574cca4b0d13916950f708acc3e1c9}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!bind@{bind}}
+\index{bind@{bind}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void pcs\+::\+Texture\+::bind (\begin{DoxyParamCaption}\item[{unsigned int}]{layer = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Binds the texture at specified layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Layer on which to bind this texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1Texture_aad31d75ae69be153300bd87e244afa54}\label{classpcs_1_1Texture_aad31d75ae69be153300bd87e244afa54}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!destroy@{destroy}}
+\index{destroy@{destroy}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void pcs\+::\+Texture\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \hyperlink{classpcs_1_1Texture}{Texture} object. 
+
+\mbox{\Hypertarget{classpcs_1_1Texture_a7cedaff72d12b58ace397f7ef4de23f3}\label{classpcs_1_1Texture_a7cedaff72d12b58ace397f7ef4de23f3}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!load\+From\+File@{load\+From\+File}}
+\index{load\+From\+File@{load\+From\+File}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{load\+From\+File()}{loadFromFile()}}
+{\footnotesize\ttfamily void pcs\+::\+Texture\+::load\+From\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{location }\end{DoxyParamCaption})}
+
+
+
+Loads the image from a given file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Location of the image file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1Texture_a8893d66d0d51a3d7ae8b6ec70f7076a1}\label{classpcs_1_1Texture_a8893d66d0d51a3d7ae8b6ec70f7076a1}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!unbind@{unbind}}
+\index{unbind@{unbind}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void pcs\+::\+Texture\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unbinds the \hyperlink{classpcs_1_1Texture}{Texture} object. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpcs_1_1Texture_a6308be3376398be4188f5bbed20c5a90}\label{classpcs_1_1Texture_a6308be3376398be4188f5bbed20c5a90}} 
+\index{pcs\+::\+Texture@{pcs\+::\+Texture}!current\+\_\+layer@{current\+\_\+layer}}
+\index{current\+\_\+layer@{current\+\_\+layer}!pcs\+::\+Texture@{pcs\+::\+Texture}}
+\subsubsection{\texorpdfstring{current\+\_\+layer}{current\_layer}}
+{\footnotesize\ttfamily unsigned int pcs\+::\+Texture\+::current\+\_\+layer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\+Graphics/\hyperlink{Texture_8h}{Texture.\+h}\item 
+src/\+Core/\+Graphics/\hyperlink{Texture_8cpp}{Texture.\+cpp}\end{DoxyCompactItemize}

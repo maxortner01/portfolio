@@ -1,0 +1,204 @@
+\hypertarget{classpcs_1_1Engine}{}\section{pcs\+:\+:Engine Class Reference}
+\label{classpcs_1_1Engine}\index{pcs\+::\+Engine@{pcs\+::\+Engine}}
+
+
+Handles rendering and holds the window instance.  
+
+
+
+
+{\ttfamily \#include $<$Engine.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:Engine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classpcs_1_1Engine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpcs_1_1Engine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1Engine_a73a5c3ce66c2c033835f19f95b67f3ea}{Engine} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{classpcs_1_1Engine}{Engine} object. \end{DoxyCompactList}\item 
+\hyperlink{classpcs_1_1Engine_aa6a523009abf3a61d9682a846c780207}{$\sim$\+Engine} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \hyperlink{classpcs_1_1Engine}{Engine} object. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1Engine_adafee2edd651c84c76e5f382afd7089b}{set\+Frame\+Limit} (const unsigned int f)
+\item 
+\hyperlink{namespacepcs_a979c2971659f1655c7ebe27752b8a9a0}{Render\+Status} \hyperlink{classpcs_1_1Engine_ad99225f71f2e1dd2b02bd99ad2c59ab3}{render\+Scene} (\hyperlink{classpcs_1_1Scene}{Scene} $\ast$scene) const
+\begin{DoxyCompactList}\small\item\em Renders a given scene to the window. \end{DoxyCompactList}\item 
+\hyperlink{classpcs_1_1Window}{Window} $\ast$ \hyperlink{classpcs_1_1Engine_a3bf8432ad5c397ea7bb3f95728fa9792}{get\+Window} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classpcs_1_1Window}{Window} instance associated with this engine. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1Engine_ab43d2dd55c8519da49f92e7ccef042a8}{push\+Camera} (void $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Push a camera to the directory. \end{DoxyCompactList}\item 
+std\+::vector$<$ void $\ast$ $>$ \& \hyperlink{classpcs_1_1Engine_a71059ef96479c7ca59901bfa0be2587a}{get\+Camera\+Directory} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classpcs_1_1Camera}{Camera} Directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespacepcs_ad2936e1e1cc9e4a344e2e90394d38ea2}{Current\+Renderer} \& \hyperlink{classpcs_1_1Engine_a1d7243c13d74af4d40b280201ff1feff}{current\+Renderer} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1Renderer}{Renderer} $\ast$ \hyperlink{classpcs_1_1Engine_a232555b38ee9ac84fdf1054de98409e9}{renderer} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ void $\ast$ $>$ \hyperlink{classpcs_1_1Engine_ad004e5859bca9815210a0f3786b83a02}{camera\+\_\+directory}
+\item 
+\hyperlink{classpcs_1_1Window}{Window} $\ast$ \hyperlink{classpcs_1_1Engine_a9d6dcbb93509389d86beb46ba33371a1}{window}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classpcs_1_1Window}{Window} on which to render to. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classpcs_1_1Engine_af8b3a08a4fb036488acd2bef928e7c16}{fps\+Limit}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Handles rendering and holds the window instance. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpcs_1_1Engine_a73a5c3ce66c2c033835f19f95b67f3ea}\label{classpcs_1_1Engine_a73a5c3ce66c2c033835f19f95b67f3ea}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily pcs\+::\+Engine\+::\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \hyperlink{classpcs_1_1Engine}{Engine} object. 
+
+\mbox{\Hypertarget{classpcs_1_1Engine_aa6a523009abf3a61d9682a846c780207}\label{classpcs_1_1Engine_aa6a523009abf3a61d9682a846c780207}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!````~Engine@{$\sim$\+Engine}}
+\index{````~Engine@{$\sim$\+Engine}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{$\sim$\+Engine()}{~Engine()}}
+{\footnotesize\ttfamily pcs\+::\+Engine\+::$\sim$\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \hyperlink{classpcs_1_1Engine}{Engine} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1Engine_a1d7243c13d74af4d40b280201ff1feff}\label{classpcs_1_1Engine_a1d7243c13d74af4d40b280201ff1feff}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!current\+Renderer@{current\+Renderer}}
+\index{current\+Renderer@{current\+Renderer}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{current\+Renderer()}{currentRenderer()}}
+{\footnotesize\ttfamily static \hyperlink{namespacepcs_ad2936e1e1cc9e4a344e2e90394d38ea2}{Current\+Renderer}\& pcs\+::\+Engine\+::current\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpcs_1_1Engine_a71059ef96479c7ca59901bfa0be2587a}\label{classpcs_1_1Engine_a71059ef96479c7ca59901bfa0be2587a}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!get\+Camera\+Directory@{get\+Camera\+Directory}}
+\index{get\+Camera\+Directory@{get\+Camera\+Directory}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{get\+Camera\+Directory()}{getCameraDirectory()}}
+{\footnotesize\ttfamily std\+::vector$<$void$\ast$$>$\& pcs\+::\+Engine\+::get\+Camera\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \hyperlink{classpcs_1_1Camera}{Camera} Directory. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$void$\ast$$>$\& \hyperlink{classpcs_1_1Camera}{Camera} Directory list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpcs_1_1Engine_a3bf8432ad5c397ea7bb3f95728fa9792}\label{classpcs_1_1Engine_a3bf8432ad5c397ea7bb3f95728fa9792}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!get\+Window@{get\+Window}}
+\index{get\+Window@{get\+Window}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{get\+Window()}{getWindow()}}
+{\footnotesize\ttfamily \hyperlink{classpcs_1_1Window}{Window}$\ast$ pcs\+::\+Engine\+::get\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the \hyperlink{classpcs_1_1Window}{Window} instance associated with this engine. 
+
+\begin{DoxyReturn}{Returns}
+Window$\ast$ Pointer to a window instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpcs_1_1Engine_ab43d2dd55c8519da49f92e7ccef042a8}\label{classpcs_1_1Engine_ab43d2dd55c8519da49f92e7ccef042a8}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!push\+Camera@{push\+Camera}}
+\index{push\+Camera@{push\+Camera}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{push\+Camera()}{pushCamera()}}
+{\footnotesize\ttfamily void pcs\+::\+Engine\+::push\+Camera (\begin{DoxyParamCaption}\item[{void $\ast$}]{camera }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Push a camera to the directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & \hyperlink{classpcs_1_1Camera}{Camera} instance to register \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1Engine_a232555b38ee9ac84fdf1054de98409e9}\label{classpcs_1_1Engine_a232555b38ee9ac84fdf1054de98409e9}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!renderer@{renderer}}
+\index{renderer@{renderer}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{renderer()}{renderer()}}
+{\footnotesize\ttfamily \hyperlink{classpcs_1_1Renderer}{Renderer} $\ast$ pcs\+::\+Engine\+::renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1Engine_ad99225f71f2e1dd2b02bd99ad2c59ab3}\label{classpcs_1_1Engine_ad99225f71f2e1dd2b02bd99ad2c59ab3}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!render\+Scene@{render\+Scene}}
+\index{render\+Scene@{render\+Scene}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{render\+Scene()}{renderScene()}}
+{\footnotesize\ttfamily \hyperlink{namespacepcs_a979c2971659f1655c7ebe27752b8a9a0}{Render\+Status} pcs\+::\+Engine\+::render\+Scene (\begin{DoxyParamCaption}\item[{\hyperlink{classpcs_1_1Scene}{Scene} $\ast$}]{scene }\end{DoxyParamCaption}) const}
+
+
+
+Renders a given scene to the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & Pointer to a scene to render \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Render\+Status Status of the render 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classpcs_1_1Engine_adafee2edd651c84c76e5f382afd7089b}\label{classpcs_1_1Engine_adafee2edd651c84c76e5f382afd7089b}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!set\+Frame\+Limit@{set\+Frame\+Limit}}
+\index{set\+Frame\+Limit@{set\+Frame\+Limit}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{set\+Frame\+Limit()}{setFrameLimit()}}
+{\footnotesize\ttfamily void pcs\+::\+Engine\+::set\+Frame\+Limit (\begin{DoxyParamCaption}\item[{const unsigned int}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpcs_1_1Engine_ad004e5859bca9815210a0f3786b83a02}\label{classpcs_1_1Engine_ad004e5859bca9815210a0f3786b83a02}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!camera\+\_\+directory@{camera\+\_\+directory}}
+\index{camera\+\_\+directory@{camera\+\_\+directory}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{camera\+\_\+directory}{camera\_directory}}
+{\footnotesize\ttfamily std\+::vector$<$void$\ast$$>$ pcs\+::\+Engine\+::camera\+\_\+directory\hspace{0.3cm}{\ttfamily [private]}}
+
+List of independent-\/typed pointers which each point to a camera associated with this engine. \mbox{\Hypertarget{classpcs_1_1Engine_af8b3a08a4fb036488acd2bef928e7c16}\label{classpcs_1_1Engine_af8b3a08a4fb036488acd2bef928e7c16}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!fps\+Limit@{fps\+Limit}}
+\index{fps\+Limit@{fps\+Limit}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{fps\+Limit}{fpsLimit}}
+{\footnotesize\ttfamily unsigned int pcs\+::\+Engine\+::fps\+Limit\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1Engine_a9d6dcbb93509389d86beb46ba33371a1}\label{classpcs_1_1Engine_a9d6dcbb93509389d86beb46ba33371a1}} 
+\index{pcs\+::\+Engine@{pcs\+::\+Engine}!window@{window}}
+\index{window@{window}!pcs\+::\+Engine@{pcs\+::\+Engine}}
+\subsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily \hyperlink{classpcs_1_1Window}{Window}$\ast$ pcs\+::\+Engine\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\hyperlink{classpcs_1_1Window}{Window} on which to render to. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\hyperlink{Engine_8h}{Engine.\+h}\item 
+src/\+Core/\hyperlink{Engine_8cpp}{Engine.\+cpp}\end{DoxyCompactItemize}

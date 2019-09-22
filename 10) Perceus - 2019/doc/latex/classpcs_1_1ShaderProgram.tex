@@ -1,0 +1,137 @@
+\hypertarget{classpcs_1_1ShaderProgram}{}\section{pcs\+:\+:Shader\+Program Class Reference}
+\label{classpcs_1_1ShaderProgram}\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+
+
+{\ttfamily \#include $<$Shader\+Program.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:Shader\+Program\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classpcs_1_1ShaderProgram__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:Shader\+Program\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classpcs_1_1ShaderProgram__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1ShaderProgram_aaf1133ce281667af24c085c680bd3aa3}{Shader\+Program} ()
+\item 
+\hyperlink{classpcs_1_1ShaderProgram_a6590bd48ce2dcba47c4a7f384d5d3316}{$\sim$\+Shader\+Program} ()
+\item 
+\hyperlink{classpcs_1_1Shader}{Shader} \& \hyperlink{classpcs_1_1ShaderProgram_ac1bc6629613f24f64887d224accd3aa8}{get\+Shader} (\hyperlink{namespacepcs_a2f6dfe5fadf3611302a9b7259502c3c9}{Shader\+Type} type)
+\item 
+bool \hyperlink{classpcs_1_1ShaderProgram_ae362fd3f64327ed7d670fee03d28ab27}{link} ()
+\item 
+bool \hyperlink{classpcs_1_1ShaderProgram_a59765d6a577e400ef261ec9e9cfa7078}{set\+Uniform} (const char $\ast$name, const \hyperlink{structpcs_1_1Mat4f}{Mat4f} \&matrix)
+\item 
+bool \hyperlink{classpcs_1_1ShaderProgram_a1ff8e923df23c341d5609ca4e65a2dad}{set\+Uniform} (const char $\ast$name, const \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} \&var)
+\item 
+bool \hyperlink{classpcs_1_1ShaderProgram_af37a2a9c024a7f6dca60f10ab281510d}{set\+Uniform} (const char $\ast$name, const int \&var)
+\item 
+void \hyperlink{classpcs_1_1ShaderProgram_a48d59dd2b34d48355ba56dd6a85eb7cf}{use} () const
+\item 
+void \hyperlink{classpcs_1_1ShaderProgram_ac5cae1dc9d1ee6433a219ab2dd6a7bc9}{close} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classpcs_1_1ShaderProgram_ac8b44e80a46e16598b37c96169fce908}{destroy\+Shaders} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classpcs_1_1Shader}{Shader} $\ast$ $>$ \hyperlink{classpcs_1_1ShaderProgram_a3e0f3697d57eeaf50e3d1d6bc9b18021}{shaders}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_aaf1133ce281667af24c085c680bd3aa3}\label{classpcs_1_1ShaderProgram_aaf1133ce281667af24c085c680bd3aa3}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!Shader\+Program@{Shader\+Program}}
+\index{Shader\+Program@{Shader\+Program}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Shader\+Program()}{ShaderProgram()}}
+{\footnotesize\ttfamily pcs\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_a6590bd48ce2dcba47c4a7f384d5d3316}\label{classpcs_1_1ShaderProgram_a6590bd48ce2dcba47c4a7f384d5d3316}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!````~Shader\+Program@{$\sim$\+Shader\+Program}}
+\index{````~Shader\+Program@{$\sim$\+Shader\+Program}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{$\sim$\+Shader\+Program()}{~ShaderProgram()}}
+{\footnotesize\ttfamily pcs\+::\+Shader\+Program\+::$\sim$\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_ac5cae1dc9d1ee6433a219ab2dd6a7bc9}\label{classpcs_1_1ShaderProgram_ac5cae1dc9d1ee6433a219ab2dd6a7bc9}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!close@{close}}
+\index{close@{close}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void pcs\+::\+Shader\+Program\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_ac8b44e80a46e16598b37c96169fce908}\label{classpcs_1_1ShaderProgram_ac8b44e80a46e16598b37c96169fce908}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!destroy\+Shaders@{destroy\+Shaders}}
+\index{destroy\+Shaders@{destroy\+Shaders}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{destroy\+Shaders()}{destroyShaders()}}
+{\footnotesize\ttfamily void pcs\+::\+Shader\+Program\+::destroy\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_ac1bc6629613f24f64887d224accd3aa8}\label{classpcs_1_1ShaderProgram_ac1bc6629613f24f64887d224accd3aa8}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!get\+Shader@{get\+Shader}}
+\index{get\+Shader@{get\+Shader}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Shader()}{getShader()}}
+{\footnotesize\ttfamily \hyperlink{classpcs_1_1Shader}{Shader} \& pcs\+::\+Shader\+Program\+::get\+Shader (\begin{DoxyParamCaption}\item[{\hyperlink{namespacepcs_a2f6dfe5fadf3611302a9b7259502c3c9}{Shader\+Type}}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_ae362fd3f64327ed7d670fee03d28ab27}\label{classpcs_1_1ShaderProgram_ae362fd3f64327ed7d670fee03d28ab27}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!link@{link}}
+\index{link@{link}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily bool pcs\+::\+Shader\+Program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_a59765d6a577e400ef261ec9e9cfa7078}\label{classpcs_1_1ShaderProgram_a59765d6a577e400ef261ec9e9cfa7078}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily bool pcs\+::\+Shader\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \hyperlink{structpcs_1_1Mat4f}{Mat4f} \&}]{matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_a1ff8e923df23c341d5609ca4e65a2dad}\label{classpcs_1_1ShaderProgram_a1ff8e923df23c341d5609ca4e65a2dad}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily bool pcs\+::\+Shader\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} \&}]{var }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_af37a2a9c024a7f6dca60f10ab281510d}\label{classpcs_1_1ShaderProgram_af37a2a9c024a7f6dca60f10ab281510d}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily bool pcs\+::\+Shader\+Program\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int \&}]{var }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_a48d59dd2b34d48355ba56dd6a85eb7cf}\label{classpcs_1_1ShaderProgram_a48d59dd2b34d48355ba56dd6a85eb7cf}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!use@{use}}
+\index{use@{use}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily void pcs\+::\+Shader\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpcs_1_1ShaderProgram_a3e0f3697d57eeaf50e3d1d6bc9b18021}\label{classpcs_1_1ShaderProgram_a3e0f3697d57eeaf50e3d1d6bc9b18021}} 
+\index{pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}!shaders@{shaders}}
+\index{shaders@{shaders}!pcs\+::\+Shader\+Program@{pcs\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{shaders}{shaders}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classpcs_1_1Shader}{Shader}$\ast$$>$ pcs\+::\+Shader\+Program\+::shaders\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\+Graphics/\+Rendering/\+Shaders/\hyperlink{ShaderProgram_8h}{Shader\+Program.\+h}\item 
+src/\+Core/\+Graphics/\+Rendering/\+Shaders/\hyperlink{ShaderProgram_8cpp}{Shader\+Program.\+cpp}\end{DoxyCompactItemize}

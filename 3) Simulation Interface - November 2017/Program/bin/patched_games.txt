@@ -1,0 +1,3 @@
+D:/SteamLibrary/steamapps/common/DiRT 4/dirt4.exe
+D:/SteamLibrary/steamapps/common/DiRT Rally/drt.exe
+D:/SteamLibrary/steamapps/common/assettocorsa/AssettoCorsa.exe

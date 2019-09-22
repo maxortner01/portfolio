@@ -1,0 +1,10 @@
+\section{keyboard.\+cpp}
+\label{keyboard_8cpp_source}\index{src/engine/controllers/keyboard.\+cpp@{src/engine/controllers/keyboard.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "keyboard.h"}
+00002 
+00003 \textcolor{keywordtype}{bool} Keyboard::getKey(\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} key)  \{
+00004     \textcolor{keywordflow}{return} glfwGetKey(Window::getWindow(), key);
+00005 \}
+\end{DoxyCode}

@@ -1,0 +1,36 @@
+\section{entity.\+h}
+\label{entity_8h_source}\index{src/engine/entities/entity.\+h@{src/engine/entities/entity.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef ENTITY\_H\_}
+00002 \textcolor{preprocessor}{#define ENTITY\_H\_}
+00003 
+00004 \textcolor{preprocessor}{#include <vector>}
+00005 
+00006 \textcolor{preprocessor}{#include "engine/components/component.h"}
+00007 
+00008 \textcolor{keyword}{using namespace }Components;
+00009 
+00010 \textcolor{keyword}{namespace }Entities \{
+00011     
+00015     \textcolor{keyword}{class }Entity
+00016     \{
+00017     \textcolor{keyword}{protected}:
+00019         std::vector<Component*> components;
+00020 
+00022         \textcolor{keywordtype}{void} process();
+00027         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} addComponent(Component* component) \{ components.push\_back(component); \}
+00028 
+00029     \textcolor{keyword}{public}:
+00033         Entity();
+00034 
+00036         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} render() \{\}
+00038         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} update() \{\}
+00039 
+00045         \textcolor{keyword}{inline} std::vector<Component*> getComponents()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} components; \}
+00046     \};
+00047 
+00048 \}
+00049 
+00050 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* ENTITY\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -1,0 +1,194 @@
+\hypertarget{classpcs_1_1RawModel}{}\section{pcs\+:\+:Raw\+Model Class Reference}
+\label{classpcs_1_1RawModel}\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+
+
+{\ttfamily \#include $<$Raw\+Model.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:Raw\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classpcs_1_1RawModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:Raw\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classpcs_1_1RawModel__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1RawModel_a3fb7c140b100311f737d23dfb9fbf6d6}{$\sim$\+Raw\+Model} ()
+\item 
+\hyperlink{unionpcs_1_1TextureArray}{Texture\+Array} \& \hyperlink{classpcs_1_1RawModel_a3caaf1aa1419660fcd4c33807eb96782}{get\+Textures} ()
+\item 
+bool \hyperlink{classpcs_1_1RawModel_aae953c9150aae7571ac4d6eba5c33305}{load\+Colors} (const std\+::vector$<$ \hyperlink{structpcs_1_1Color}{Color} $>$ \&colors)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_a5271416a4170cf08bd5350749d685b7c}{load\+Normals} (const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&normals)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_a5374bbadf5f2a6e19304a1a89ca8e54d}{load\+Vertices} (const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&vertices)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_acac5d3775fec41de4df5ba961b32d18c}{load\+Tex\+Coords} (const std\+::vector$<$ \hyperlink{namespacepcs_a4b2fd718bd0800b6aa492b1c60f19edc}{Vec2f} $>$ \&tex\+Coords)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_adb1d28808d43a29209414e1b0ee56022}{load\+Model\+Matrices} (const std\+::vector$<$ \hyperlink{structpcs_1_1Mat4f}{Mat4f} $>$ \&matrices)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_aa4798a4d19458fdb4aedeed0be9c02a1}{load\+Bitangents} (const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&bitangents)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_a85196296fb104770053b215548c6341e}{load\+Tangents} (const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&tangents)
+\item 
+bool \hyperlink{classpcs_1_1RawModel_a147fb1b196e18e2f2deb1a6e86fff9b6}{generate\+Indices} (std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ vertices)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$ \hyperlink{classpcs_1_1RawModel_ac01c81a6c26c802f17a65f6c81147206}{Create} (const \hyperlink{classpcs_1_1VertexArray}{Vertex\+Array} \&vertex)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1RawModel_addb04fed9a364e9c24b8b4f4b69480a7}{Raw\+Model} (const \hyperlink{classpcs_1_1VertexArray}{Vertex\+Array} \&vertex)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classpcs_1_1RawModel_adbbbfe236105284084c5fd9e16afda7b}{flush\+Raw\+Models} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{unionpcs_1_1TextureArray}{Texture\+Array} \hyperlink{classpcs_1_1RawModel_a5441811d19297669eefdb405ea94ce0c}{textures}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$ $>$ \hyperlink{classpcs_1_1RawModel_a49828e249759c0f359ebce06ad651332}{raw\+Models}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpcs_1_1RawModel_a3e1914489e4bed4f9f23cdeab34a43dc}{Engine}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpcs_1_1RawModel_addb04fed9a364e9c24b8b4f4b69480a7}\label{classpcs_1_1RawModel_addb04fed9a364e9c24b8b4f4b69480a7}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!Raw\+Model@{Raw\+Model}}
+\index{Raw\+Model@{Raw\+Model}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{Raw\+Model()}{RawModel()}}
+{\footnotesize\ttfamily pcs\+::\+Raw\+Model\+::\+Raw\+Model (\begin{DoxyParamCaption}\item[{const \hyperlink{classpcs_1_1VertexArray}{Vertex\+Array} \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a3fb7c140b100311f737d23dfb9fbf6d6}\label{classpcs_1_1RawModel_a3fb7c140b100311f737d23dfb9fbf6d6}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!````~Raw\+Model@{$\sim$\+Raw\+Model}}
+\index{````~Raw\+Model@{$\sim$\+Raw\+Model}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Raw\+Model()}{~RawModel()}}
+{\footnotesize\ttfamily pcs\+::\+Raw\+Model\+::$\sim$\+Raw\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1RawModel_ac01c81a6c26c802f17a65f6c81147206}\label{classpcs_1_1RawModel_ac01c81a6c26c802f17a65f6c81147206}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!Create@{Create}}
+\index{Create@{Create}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily \hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$ pcs\+::\+Raw\+Model\+::\+Create (\begin{DoxyParamCaption}\item[{const \hyperlink{classpcs_1_1VertexArray}{Vertex\+Array} \&}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_adbbbfe236105284084c5fd9e16afda7b}\label{classpcs_1_1RawModel_adbbbfe236105284084c5fd9e16afda7b}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!flush\+Raw\+Models@{flush\+Raw\+Models}}
+\index{flush\+Raw\+Models@{flush\+Raw\+Models}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{flush\+Raw\+Models()}{flushRawModels()}}
+{\footnotesize\ttfamily void pcs\+::\+Raw\+Model\+::flush\+Raw\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a147fb1b196e18e2f2deb1a6e86fff9b6}\label{classpcs_1_1RawModel_a147fb1b196e18e2f2deb1a6e86fff9b6}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!generate\+Indices@{generate\+Indices}}
+\index{generate\+Indices@{generate\+Indices}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{generate\+Indices()}{generateIndices()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::generate\+Indices (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$}]{vertices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a3caaf1aa1419660fcd4c33807eb96782}\label{classpcs_1_1RawModel_a3caaf1aa1419660fcd4c33807eb96782}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!get\+Textures@{get\+Textures}}
+\index{get\+Textures@{get\+Textures}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{get\+Textures()}{getTextures()}}
+{\footnotesize\ttfamily \hyperlink{unionpcs_1_1TextureArray}{Texture\+Array}\& pcs\+::\+Raw\+Model\+::get\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_aa4798a4d19458fdb4aedeed0be9c02a1}\label{classpcs_1_1RawModel_aa4798a4d19458fdb4aedeed0be9c02a1}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Bitangents@{load\+Bitangents}}
+\index{load\+Bitangents@{load\+Bitangents}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Bitangents()}{loadBitangents()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Bitangents (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&}]{bitangents }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_aae953c9150aae7571ac4d6eba5c33305}\label{classpcs_1_1RawModel_aae953c9150aae7571ac4d6eba5c33305}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Colors@{load\+Colors}}
+\index{load\+Colors@{load\+Colors}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Colors()}{loadColors()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Colors (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structpcs_1_1Color}{Color} $>$ \&}]{colors }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_adb1d28808d43a29209414e1b0ee56022}\label{classpcs_1_1RawModel_adb1d28808d43a29209414e1b0ee56022}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Model\+Matrices@{load\+Model\+Matrices}}
+\index{load\+Model\+Matrices@{load\+Model\+Matrices}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Model\+Matrices()}{loadModelMatrices()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Model\+Matrices (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structpcs_1_1Mat4f}{Mat4f} $>$ \&}]{matrices }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a5271416a4170cf08bd5350749d685b7c}\label{classpcs_1_1RawModel_a5271416a4170cf08bd5350749d685b7c}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Normals@{load\+Normals}}
+\index{load\+Normals@{load\+Normals}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Normals()}{loadNormals()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Normals (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&}]{normals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a85196296fb104770053b215548c6341e}\label{classpcs_1_1RawModel_a85196296fb104770053b215548c6341e}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Tangents@{load\+Tangents}}
+\index{load\+Tangents@{load\+Tangents}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Tangents()}{loadTangents()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Tangents (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&}]{tangents }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_acac5d3775fec41de4df5ba961b32d18c}\label{classpcs_1_1RawModel_acac5d3775fec41de4df5ba961b32d18c}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Tex\+Coords@{load\+Tex\+Coords}}
+\index{load\+Tex\+Coords@{load\+Tex\+Coords}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Tex\+Coords()}{loadTexCoords()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Tex\+Coords (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{namespacepcs_a4b2fd718bd0800b6aa492b1c60f19edc}{Vec2f} $>$ \&}]{tex\+Coords }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a5374bbadf5f2a6e19304a1a89ca8e54d}\label{classpcs_1_1RawModel_a5374bbadf5f2a6e19304a1a89ca8e54d}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!load\+Vertices@{load\+Vertices}}
+\index{load\+Vertices@{load\+Vertices}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{load\+Vertices()}{loadVertices()}}
+{\footnotesize\ttfamily bool pcs\+::\+Raw\+Model\+::load\+Vertices (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{namespacepcs_a68e0f517680976c17c810ffe6952cbab}{Vec3f} $>$ \&}]{vertices }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1RawModel_a3e1914489e4bed4f9f23cdeab34a43dc}\label{classpcs_1_1RawModel_a3e1914489e4bed4f9f23cdeab34a43dc}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!Engine@{Engine}}
+\index{Engine@{Engine}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{Engine}{Engine}}
+{\footnotesize\ttfamily friend class \hyperlink{classpcs_1_1Engine}{Engine}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpcs_1_1RawModel_a49828e249759c0f359ebce06ad651332}\label{classpcs_1_1RawModel_a49828e249759c0f359ebce06ad651332}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!raw\+Models@{raw\+Models}}
+\index{raw\+Models@{raw\+Models}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{raw\+Models}{rawModels}}
+{\footnotesize\ttfamily std\+::vector$<$ \hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$ $>$ pcs\+::\+Raw\+Model\+::raw\+Models\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1RawModel_a5441811d19297669eefdb405ea94ce0c}\label{classpcs_1_1RawModel_a5441811d19297669eefdb405ea94ce0c}} 
+\index{pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}!textures@{textures}}
+\index{textures@{textures}!pcs\+::\+Raw\+Model@{pcs\+::\+Raw\+Model}}
+\subsubsection{\texorpdfstring{textures}{textures}}
+{\footnotesize\ttfamily \hyperlink{unionpcs_1_1TextureArray}{Texture\+Array} pcs\+::\+Raw\+Model\+::textures\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\+Graphics/\+Entities/\hyperlink{RawModel_8h}{Raw\+Model.\+h}\item 
+src/\+Core/\+Graphics/\+Entities/\hyperlink{RawModel_8cpp}{Raw\+Model.\+cpp}\end{DoxyCompactItemize}

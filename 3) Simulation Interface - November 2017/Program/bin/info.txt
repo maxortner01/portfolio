@@ -1,0 +1,64 @@
+0	Total Time 
+1	Stage Time
+2	Stage Distance 
+3	? (starts from 0) - if distance then not equal to above!
+4	X
+5	Y
+6	Z
+7	Speed
+8	Velocity X
+9	Velocity Y
+10	Velocity Z
+11	Roll Vector X
+12	Roll Vector Y
+13	Roll Vector Z
+14	Pitch Vector X
+15	Pitch Vector Y
+16	Pitch Vector Z
+17	Position of Suspension Rear Left
+18	Position of Suspension Rear Right
+19	Position of Suspension Front Left
+20	Position of Suspension Front Right
+21	Velocity of Suspension Rear Left
+22	Velocity of Suspension Rear Right
+23	Velocity of Suspension Front Left
+24	Velocity of Suspension Front Right
+25	VRear Left
+26	VRear Right
+27	VFront Left
+28	VFront Right
+29	Throttle
+30	Steer
+31	Brake
+32	Clutch
+33	Gear 
+34	G-Force Lateral
+35	G-Force Longitudinal
+36	Current Lap 
+37	rpm
+38	? (always 1)
+39	Current Position 
+40	? (always 0)
+41	? (always 0)
+42	? (always 0)
+43	? (always 0)
+44	? (always 0)
+45	? (always 0)
+46	? (always 0)
+47	? (always 0)
+48	? (always 0)
+49	Sector time 
+50	2nd Sector time
+51	TBRear Left
+52	TBRear Right
+53	TBFront Left
+54	TBFront Right
+55	?  (always 0)
+56	? (always 0)
+57	? (always 0)
+58	? (always 0)
+59	Current Lap 
+60	Total Number of Laps 
+61	Total Track Length
+62	Last lap time
+63	Max rpm

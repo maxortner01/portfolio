@@ -1,0 +1,51 @@
+\section{window.\+h}
+\label{window_8h_source}\index{src/engine/window.\+h@{src/engine/window.\+h}}
+
+\begin{DoxyCode}
+00001 
+00012 \textcolor{preprocessor}{#ifndef WINDOW\_H\_}
+00013 \textcolor{preprocessor}{#define WINDOW\_H\_}
+00014 
+00015 \textcolor{preprocessor}{#include <iostream>}
+00016 \textcolor{preprocessor}{#include <string>}
+00017 
+00018 \textcolor{preprocessor}{#include <GL/glew.h>}
+00019 \textcolor{preprocessor}{#include <GLFW/glfw3.h>}
+00020 
+00021 \textcolor{preprocessor}{#include "controllers/screen.h"}
+00022 
+00023 \textcolor{keyword}{using namespace }Controllers;
+00024 
+00025 \textcolor{keyword}{class }Window
+00026 \{
+00027 \textcolor{keyword}{private}:
+00029     \textcolor{keyword}{static} \textcolor{keywordtype}{int}  width, height;
+00030     \textcolor{keywordtype}{int}         frame;
+00031 
+00033     \textcolor{keywordtype}{bool}        fullscreen;
+00034 
+00036     std::string title;
+00037 
+00039     \textcolor{keyword}{static} GLFWwindow* window;
+00040 
+00042     \textcolor{keywordtype}{void} init();
+00043 
+00044 \textcolor{keyword}{public}:
+00054     Window(\textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h, std::string t);
+00055 
+00057     ~Window();
+00058 
+00060     \textcolor{keywordtype}{void} update();
+00061 
+00068     \textcolor{keywordtype}{void} render(Screen* currentScreen);
+00069 
+00071     \textcolor{keyword}{inline} \textcolor{keywordtype}{bool} shouldClose() \{ \textcolor{keywordflow}{return} glfwWindowShouldClose(window); \}
+00072 
+00073     \textcolor{comment}{/* GET / SET */}
+00074     \textcolor{keyword}{static} \textcolor{keywordtype}{int}  getWidth()          \{ \textcolor{keywordflow}{return} width;  \}
+00075     \textcolor{keyword}{static} \textcolor{keywordtype}{int}  getHeight()         \{ \textcolor{keywordflow}{return} height; \}
+00076     \textcolor{keyword}{static} GLFWwindow* getWindow()  \{ \textcolor{keywordflow}{return} window; \}
+00077 \};
+00078 
+00079 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* WINDOW\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -1,0 +1,14 @@
+<map id="pcs::Scene" name="pcs::Scene">
+<area shape="rect" id="node2" href="$classpcs_1_1Data_1_1Status.html" title="pcs::Data::Status\&lt;\l SceneState \&gt;" alt="" coords="780,5,913,47"/>
+<area shape="rect" id="node3" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="503,90,667,117"/>
+<area shape="rect" id="node5" href="$classpcs_1_1ShaderProgram.html" title="pcs::ShaderProgram" alt="" coords="776,71,917,98"/>
+<area shape="rect" id="node4" href="$structpcs_1_1rend_1_1RenderSettings.html" title="Container for choosing various API types. " alt="" coords="229,90,404,117"/>
+<area shape="rect" id="node6" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; ShaderProgram \&gt;" alt="" coords="515,24,654,65"/>
+<area shape="rect" id="node7" href="$classpcs_1_1Camera.html" title="pcs::Camera" alt="" coords="798,181,895,207"/>
+<area shape="rect" id="node8" href="$classpcs_1_1Transformable3D.html" title="pcs::Transformable3D\l\&lt; float \&gt;" alt="" coords="509,141,660,183"/>
+<area shape="rect" id="node9" href="$classpcs_1_1Transformable.html" title="pcs::Transformable\l\&lt; Vec3\&lt; float \&gt; \&gt;" alt="" coords="249,141,384,183"/>
+<area shape="rect" id="node10" href="$structpcs_1_1Vec3.html" title="pcs::Vec3\&lt; float \&gt;" alt="" coords="5,149,136,175"/>
+<area shape="rect" id="node11" href="$classpcs_1_1Data_1_1ObjectUID.html" title="Base class that creates a 64&#45;bit unique ID. " alt="" coords="510,207,659,234"/>
+<area shape="rect" id="node12" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; ObjectUID, U64 \&gt;" alt="" coords="247,207,387,248"/>
+<area shape="rect" id="node13" href="$structpcs_1_1Mat4f.html" title="pcs::Mat4f" alt="" coords="543,258,627,285"/>
+</map>

@@ -1,0 +1,75 @@
+\section{transform.\+cpp}
+\label{transform_8cpp_source}\index{src/engine/components/transform.\+cpp@{src/engine/components/transform.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "transform.h"}
+00002 
+00003 Transform::Transform() \{
+00004     position = vec3(0, 0, 0);
+00005 \}
+00006 
+00007 Transform::Transform(\textcolor{keywordtype}{float} x) \{
+00008     position = vec3(x, 0, 0);
+00009 \}
+00010 
+00011 Transform::Transform(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y) \{
+00012     position = vec3(x, y, 0);
+00013 \}
+00014 
+00015 Transform::Transform(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z) \{
+00016     position = vec3(x, y, z);
+00017 \}
+00018 
+00019 Transform::Transform(vec3 pos) \{
+00020     position = pos;
+00021 \}
+00022 
+00023 mat4 Transform::getModelMatrix()\textcolor{keyword}{ const }\{
+00024     mat4 model(1.0);
+00025 
+00026      model = rotate(model, rotation.x, 
+00027         vec3(1, 0, 0)
+00028     );
+00029 
+00030     model = rotate(model, rotation.y, 
+00031         vec3(0, 1, 0)
+00032     );
+00033 
+00034     model = rotate(model, rotation.z, 
+00035         vec3(0, 0, 1)
+00036     );
+00037 
+00038     model = glm::scale( model, vec3(scale.x, scale.y, scale.z) );
+00039     model = translate ( model, vec3(position.x, position.y, position.z) );
+00040 
+00041     \textcolor{keywordflow}{return} model;
+00042 \}
+00043 
+00044 \textcolor{keywordtype}{void} Transform::setScale(vec3 s) \{
+00045     scale = s;
+00046 \}
+00047 
+00048 \textcolor{keywordtype}{void} Transform::addScale(vec3 amt) \{
+00049     scale += amt;
+00050 \}
+00051 
+00052 \textcolor{keywordtype}{void} Transform::setRotation(vec3 s) \{
+00053     rotation = s;
+00054 \}
+00055 
+00056 \textcolor{keywordtype}{void} Transform::addRotation(vec3 amt) \{
+00057     rotation += amt;
+00058 \}
+00059 
+00060 \textcolor{keywordtype}{void} Transform::setTranslation(vec3 t) \{
+00061     position = t;
+00062 \}
+00063 
+00064 \textcolor{keywordtype}{void} Transform::addTranslation(vec3 amt) \{
+00065     position += amt;
+00066 \}
+00067 
+00068 \textcolor{keywordtype}{void} Transform::update() \{
+00069 
+00070 \}
+\end{DoxyCode}

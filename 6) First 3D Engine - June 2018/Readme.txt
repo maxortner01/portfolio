@@ -1,0 +1,1 @@
+This was my first attempt at a full-fledged game engine. As with most things I learned it by doing it, so this is the first iteration of my game engine project.

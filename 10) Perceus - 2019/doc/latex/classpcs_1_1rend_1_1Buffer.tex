@@ -1,0 +1,241 @@
+\hypertarget{classpcs_1_1rend_1_1Buffer}{}\section{pcs\+:\+:rend\+:\+:Buffer Class Reference}
+\label{classpcs_1_1rend_1_1Buffer}\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+
+
+Handles transportation of vector-\/based data into the render api.  
+
+
+
+
+{\ttfamily \#include $<$Buffer.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:rend\+:\+:Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classpcs_1_1rend_1_1Buffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:rend\+:\+:Buffer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{classpcs_1_1rend_1_1Buffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1rend_1_1Buffer_add9c4196c80605e47170fa37ad7eef50}{Buffer} (unsigned int index)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer} object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classpcs_1_1rend_1_1Buffer_a4ac6db7b29dd6a33d1f65b0c491a033f}{Buffer} (unsigned int index, Args... args)
+\begin{DoxyCompactList}\small\item\em Constructs a new \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer} object and binds specified data. \end{DoxyCompactList}\item 
+\hyperlink{classpcs_1_1rend_1_1Buffer_a38bfdd852e494d21e430b2a0007021d4}{$\sim$\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer} object. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1rend_1_1Buffer_a1be9c6c19cee147e580c8d1038a664a9}{bind} ()
+\begin{DoxyCompactList}\small\item\em Binds the buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1rend_1_1Buffer_ae50fade1bf8340f6db27af4bad5a09ba}{unbind} () const
+\begin{DoxyCompactList}\small\item\em Unbinds the buffer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classpcs_1_1rend_1_1Buffer_a3e8a8fa6bbd51354ef27e86151d64022}{bind\+Data} (T $\ast$data, unsigned int count, unsigned int members)
+\begin{DoxyCompactList}\small\item\em Binds the specified data to the gpu-\/buffer. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{classpcs_1_1rend_1_1Buffer_a4bacdd4e554827ec9a86a08a94cc79e4}{bind\+Data} (const std\+::vector$<$ T $>$ \&data, const unsigned int members)
+\begin{DoxyCompactList}\small\item\em Binds the specified data to the gpu-\/buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1rend_1_1Buffer_a6cbc511646a70b0c7b93b65552e4b86c}{bind\+Data} (const std\+::vector$<$ \hyperlink{structpcs_1_1Mat4f}{Mat4f} $>$ \&matrices)
+\begin{DoxyCompactList}\small\item\em Binds the specified list of matrices to the gpu-\/buffer. \end{DoxyCompactList}\item 
+unsigned int \& \hyperlink{classpcs_1_1rend_1_1Buffer_a7825820bbf1227e6b94867523c6333fa}{get\+Index} ()
+\begin{DoxyCompactList}\small\item\em Gets the current index within an array object. \end{DoxyCompactList}\item 
+unsigned int \& \hyperlink{classpcs_1_1rend_1_1Buffer_a6b946389de081d61317561addc797356}{get\+Count} ()
+\begin{DoxyCompactList}\small\item\em Gets the data count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{classpcs_1_1rend_1_1Buffer_ae651e17a3f64d982b2bd1e39e91bc89c}{\+\_\+index}
+\item 
+unsigned int \hyperlink{classpcs_1_1rend_1_1Buffer_a12efdd79f91856672f8c8dc8af0306c4}{\+\_\+count}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Handles transportation of vector-\/based data into the render api. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_add9c4196c80605e47170fa37ad7eef50}\label{classpcs_1_1rend_1_1Buffer_add9c4196c80605e47170fa37ad7eef50}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily pcs\+::rend\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{unsigned int}]{index }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the buffer within an array object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a4ac6db7b29dd6a33d1f65b0c491a033f}\label{classpcs_1_1rend_1_1Buffer_a4ac6db7b29dd6a33d1f65b0c491a033f}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{Buffer()}{Buffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename... Args$>$ \\
+pcs\+::rend\+::\+Buffer\+::\+Buffer (\begin{DoxyParamCaption}\item[{unsigned int}]{index,  }\item[{Args...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer} object and binds specified data. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & Arguments which correspond to a bind\+Data function \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the buffer within an array object \\
+\hline
+{\em args} & Arguments which correspond to a bind\+Data function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a38bfdd852e494d21e430b2a0007021d4}\label{classpcs_1_1rend_1_1Buffer_a38bfdd852e494d21e430b2a0007021d4}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!````~Buffer@{$\sim$\+Buffer}}
+\index{````~Buffer@{$\sim$\+Buffer}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{$\sim$\+Buffer()}{~Buffer()}}
+{\footnotesize\ttfamily pcs\+::rend\+::\+Buffer\+::$\sim$\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a1be9c6c19cee147e580c8d1038a664a9}\label{classpcs_1_1rend_1_1Buffer_a1be9c6c19cee147e580c8d1038a664a9}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!bind@{bind}}
+\index{bind@{bind}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void pcs\+::rend\+::\+Buffer\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Binds the buffer. 
+
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a3e8a8fa6bbd51354ef27e86151d64022}\label{classpcs_1_1rend_1_1Buffer_a3e8a8fa6bbd51354ef27e86151d64022}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!bind\+Data@{bind\+Data}}
+\index{bind\+Data@{bind\+Data}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{bind\+Data()}{bindData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void pcs\+::rend\+::\+Buffer\+::bind\+Data (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{unsigned int}]{count,  }\item[{unsigned int}]{members }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Binds the specified data to the gpu-\/buffer. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of data to bind \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Pointer to the data \\
+\hline
+{\em count} & Amount of items in the array \\
+\hline
+{\em members} & Amount of data members per object of type T \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a4bacdd4e554827ec9a86a08a94cc79e4}\label{classpcs_1_1rend_1_1Buffer_a4bacdd4e554827ec9a86a08a94cc79e4}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!bind\+Data@{bind\+Data}}
+\index{bind\+Data@{bind\+Data}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{bind\+Data()}{bindData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void pcs\+::rend\+::\+Buffer\+::bind\+Data (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{data,  }\item[{const unsigned int}]{members }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Binds the specified data to the gpu-\/buffer. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of data to bind \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Vector of data \\
+\hline
+{\em members} & Amount of data members per object of type T \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a6cbc511646a70b0c7b93b65552e4b86c}\label{classpcs_1_1rend_1_1Buffer_a6cbc511646a70b0c7b93b65552e4b86c}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!bind\+Data@{bind\+Data}}
+\index{bind\+Data@{bind\+Data}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{bind\+Data()}{bindData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void pcs\+::rend\+::\+Buffer\+::bind\+Data (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \hyperlink{structpcs_1_1Mat4f}{Mat4f} $>$ \&}]{matrices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Binds the specified list of matrices to the gpu-\/buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrices} & Vector of matrices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a6b946389de081d61317561addc797356}\label{classpcs_1_1rend_1_1Buffer_a6b946389de081d61317561addc797356}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!get\+Count@{get\+Count}}
+\index{get\+Count@{get\+Count}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Count()}{getCount()}}
+{\footnotesize\ttfamily unsigned int\& pcs\+::rend\+::\+Buffer\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the data count. 
+
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a7825820bbf1227e6b94867523c6333fa}\label{classpcs_1_1rend_1_1Buffer_a7825820bbf1227e6b94867523c6333fa}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!get\+Index@{get\+Index}}
+\index{get\+Index@{get\+Index}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Index()}{getIndex()}}
+{\footnotesize\ttfamily unsigned int\& pcs\+::rend\+::\+Buffer\+::get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current index within an array object. 
+
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_ae50fade1bf8340f6db27af4bad5a09ba}\label{classpcs_1_1rend_1_1Buffer_ae50fade1bf8340f6db27af4bad5a09ba}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!unbind@{unbind}}
+\index{unbind@{unbind}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void pcs\+::rend\+::\+Buffer\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Unbinds the buffer. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_a12efdd79f91856672f8c8dc8af0306c4}\label{classpcs_1_1rend_1_1Buffer_a12efdd79f91856672f8c8dc8af0306c4}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!\+\_\+count@{\+\_\+count}}
+\index{\+\_\+count@{\+\_\+count}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{\+\_\+count}{\_count}}
+{\footnotesize\ttfamily unsigned int pcs\+::rend\+::\+Buffer\+::\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classpcs_1_1rend_1_1Buffer_ae651e17a3f64d982b2bd1e39e91bc89c}\label{classpcs_1_1rend_1_1Buffer_ae651e17a3f64d982b2bd1e39e91bc89c}} 
+\index{pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}!\+\_\+index@{\+\_\+index}}
+\index{\+\_\+index@{\+\_\+index}!pcs\+::rend\+::\+Buffer@{pcs\+::rend\+::\+Buffer}}
+\subsubsection{\texorpdfstring{\+\_\+index}{\_index}}
+{\footnotesize\ttfamily unsigned int pcs\+::rend\+::\+Buffer\+::\+\_\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\+Graphics/\+Entities/\hyperlink{Buffer_8h}{Buffer.\+h}\item 
+src/\+Core/\+Graphics/\+Entities/\hyperlink{Buffer_8cpp}{Buffer.\+cpp}\end{DoxyCompactItemize}

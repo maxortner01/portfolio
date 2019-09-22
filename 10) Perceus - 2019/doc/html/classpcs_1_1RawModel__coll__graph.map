@@ -1,0 +1,9 @@
+<map id="pcs::RawModel" name="pcs::RawModel">
+<area shape="rect" id="node2" href="$classpcs_1_1rend_1_1BufferArray.html" title="Class that contains 16 buffer objects. In OpenGL this class represents the OOP version of a VAO..." alt="" coords="249,185,399,212"/>
+<area shape="rect" id="node3" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="169,102,333,129"/>
+<area shape="rect" id="node7" href="$classpcs_1_1Texture.html" title="Represents a texture. " alt="" coords="130,185,225,212"/>
+<area shape="rect" id="node4" href="$structpcs_1_1rend_1_1RenderSettings.html" title="Container for choosing various API types. " alt="" coords="163,5,338,32"/>
+<area shape="rect" id="node5" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; BufferArray \&gt;" alt="" coords="357,95,496,136"/>
+<area shape="rect" id="node6" href="$unionpcs_1_1TextureArray.html" title="Array of textures that follows TextureTypes. " alt="" coords="147,304,274,331"/>
+<area shape="rect" id="node8" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; Texture \&gt;" alt="" coords="5,95,144,136"/>
+</map>

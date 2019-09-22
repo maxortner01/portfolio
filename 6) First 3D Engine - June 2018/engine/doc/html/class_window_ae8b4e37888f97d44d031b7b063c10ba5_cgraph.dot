@@ -1,0 +1,11 @@
+digraph "Window::render"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="Window::render",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Controllers::Screen\l::update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_screen.html#a3be5494644b0658b8d683b5b3456a06e",tooltip="Update variables. "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Controllers::Screen\l::render",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_screen.html#a24253359140b4c70382b0c5bc104afc6",tooltip="Render to screen. "];
+}

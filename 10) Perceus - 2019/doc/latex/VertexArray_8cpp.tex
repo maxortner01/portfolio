@@ -1,0 +1,38 @@
+\hypertarget{VertexArray_8cpp}{}\section{src/\+Core/\+Graphics/\+Entities/\+Vertex\+Array.cpp File Reference}
+\label{VertexArray_8cpp}\index{src/\+Core/\+Graphics/\+Entities/\+Vertex\+Array.\+cpp@{src/\+Core/\+Graphics/\+Entities/\+Vertex\+Array.\+cpp}}
+{\ttfamily \#include \char`\"{}Perceus/\+Core/\+Graphics/\+Entities/\+Vertex\+Array.\+h\char`\"{}}\newline
+Include dependency graph for Vertex\+Array.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{VertexArray_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacepcs}{pcs}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{VertexArray_8cpp_a7348e6da8848ba89ebd3ee823ecdcdcd}{get\+Type}(type,  name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{VertexArray_8cpp_a7348e6da8848ba89ebd3ee823ecdcdcd}\label{VertexArray_8cpp_a7348e6da8848ba89ebd3ee823ecdcdcd}} 
+\index{Vertex\+Array.\+cpp@{Vertex\+Array.\+cpp}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Vertex\+Array.\+cpp@{Vertex\+Array.\+cpp}}
+\subsubsection{\texorpdfstring{get\+Type}{getType}}
+{\footnotesize\ttfamily \#define get\+Type(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+std::vector<type> v;\(\backslash\)
+        v.reserve(vertices.size());\(\backslash\)
+        for (\textcolor{keywordtype}{int} i = 0; i < vertices.size(); i++)\(\backslash\)
+            v.push\_back(vertices[i].name);\(\backslash\)
+        return v;
+\end{DoxyCode}

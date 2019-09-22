@@ -1,0 +1,166 @@
+\hypertarget{namespacepcs_1_1rend}{}\section{pcs\+:\+:rend Namespace Reference}
+\label{namespacepcs_1_1rend}\index{pcs\+::rend@{pcs\+::rend}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classpcs_1_1rend_1_1Buffer}{Buffer}
+\begin{DoxyCompactList}\small\item\em Handles transportation of vector-\/based data into the render api. \end{DoxyCompactList}\item 
+class \hyperlink{classpcs_1_1rend_1_1BufferArray}{Buffer\+Array}
+\begin{DoxyCompactList}\small\item\em Class that contains 16 buffer objects. In Open\+GL this class represents the O\+OP version of a V\+AO. \end{DoxyCompactList}\item 
+struct \hyperlink{structpcs_1_1rend_1_1RenderAPI}{Render\+A\+PI}
+\item 
+class \hyperlink{classpcs_1_1rend_1_1RenderObject}{Render\+Object}
+\begin{DoxyCompactList}\small\item\em Class for retreiving the currently selected render A\+PI. \end{DoxyCompactList}\item 
+struct \hyperlink{structpcs_1_1rend_1_1RenderSettings}{Render\+Settings}
+\begin{DoxyCompactList}\small\item\em Container for choosing various A\+PI types. \end{DoxyCompactList}\item 
+class \hyperlink{classpcs_1_1rend_1_1RenderSurface}{Render\+Surface}
+\begin{DoxyCompactList}\small\item\em Class that handles basic rendering functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61b}{Buffer\+Index} \{ \newline
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61bae4bb6129669488aedeeb0ae27bb91770}{Buffer\+Index\+::\+Vertices}, 
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba960b44c579bc2f6818d2daaf9e4c16f0}{Buffer\+Index\+::\+Normal}, 
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61baf960d67a26c7fc9a8427dba5b1563ce0}{Buffer\+Index\+::\+Tex\+Coords}, 
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61bacb5feb1b7314637725a2e73bdc9f7295}{Buffer\+Index\+::\+Color}, 
+\newline
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba2588d65a3b15e2b8c5ddac3d9af9a750}{Buffer\+Index\+::\+Tangents}, 
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba3e04ff8d5f81e0e803be16ae79aaf3c6}{Buffer\+Index\+::\+Model\+Matrix}, 
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba0a8e4b49c88d90e6d64cb6535deed2c7}{Buffer\+Index\+::\+Indices}, 
+\hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba9d01af8c2aad05d7fffcad6c70e694f6}{Buffer\+Index\+::\+Buffer\+Count}
+ \}\begin{DoxyCompactList}\small\item\em Index of each buffer type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8}{Buffer\+Type} \{ \hyperlink{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8ab22b929ba52471a02d18bb3a4e4472e6}{Buffer\+Type\+::\+Vertex}, 
+\hyperlink{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8a88fa71f0a6e0dfedbb46d91cc0b37a50}{Buffer\+Type\+::\+Index}
+ \}
+\item 
+enum \hyperlink{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68f}{Render\+A\+P\+I\+Type} \{ \hyperlink{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68fab356921baf7069b879f7bab06b3ae51e}{Open\+GL}, 
+\hyperlink{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68fae83ad85a1eeae823f580ff178480e822}{Direct\+X11}, 
+\hyperlink{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68faa8dec94b56741fb1b21110927bf82847}{Vulkan}
+ \}\begin{DoxyCompactList}\small\item\em Enum that holds the types of A\+P\+Is. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct Open\+A\+PI \hyperlink{namespacepcs_1_1rend_a47b6c0b1a163b77ece37e062069e9a53}{R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+VE} (Open\+A\+PI)
+\item 
+void \hyperlink{namespacepcs_1_1rend_a1503c4309f7b12b21e81ea63bd94d2aa}{window\+\_\+close\+\_\+callback} (G\+L\+F\+Wwindow $\ast$window)
+\item 
+void \hyperlink{namespacepcs_1_1rend_a8e7a766672350b75533bef4c5191ae4d}{key\+\_\+callback} (G\+L\+F\+Wwindow $\ast$window, int key, int scancode, int action, int mods)
+\item 
+void \hyperlink{namespacepcs_1_1rend_ac79ddac7e283a8b63b72499a84603863}{raw\+Data\+Bind} (unsigned int bytesize, const void $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61b}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61b}} 
+\index{pcs\+::rend@{pcs\+::rend}!Buffer\+Index@{Buffer\+Index}}
+\index{Buffer\+Index@{Buffer\+Index}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{Buffer\+Index}{BufferIndex}}
+{\footnotesize\ttfamily enum \hyperlink{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61b}{pcs\+::rend\+::\+Buffer\+Index}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Index of each buffer type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vertices@{Vertices}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Vertices@{Vertices}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61bae4bb6129669488aedeeb0ae27bb91770}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61bae4bb6129669488aedeeb0ae27bb91770}} 
+Vertices&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Normal@{Normal}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba960b44c579bc2f6818d2daaf9e4c16f0}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba960b44c579bc2f6818d2daaf9e4c16f0}} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tex\+Coords@{Tex\+Coords}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Tex\+Coords@{Tex\+Coords}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61baf960d67a26c7fc9a8427dba5b1563ce0}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61baf960d67a26c7fc9a8427dba5b1563ce0}} 
+Tex\+Coords&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Color@{Color}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Color@{Color}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61bacb5feb1b7314637725a2e73bdc9f7295}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61bacb5feb1b7314637725a2e73bdc9f7295}} 
+Color&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Tangents@{Tangents}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Tangents@{Tangents}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba2588d65a3b15e2b8c5ddac3d9af9a750}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba2588d65a3b15e2b8c5ddac3d9af9a750}} 
+Tangents&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Model\+Matrix@{Model\+Matrix}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Model\+Matrix@{Model\+Matrix}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba3e04ff8d5f81e0e803be16ae79aaf3c6}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba3e04ff8d5f81e0e803be16ae79aaf3c6}} 
+Model\+Matrix&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Indices@{Indices}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Indices@{Indices}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba0a8e4b49c88d90e6d64cb6535deed2c7}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba0a8e4b49c88d90e6d64cb6535deed2c7}} 
+Indices&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Buffer\+Count@{Buffer\+Count}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Buffer\+Count@{Buffer\+Count}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba9d01af8c2aad05d7fffcad6c70e694f6}\label{namespacepcs_1_1rend_a731e43a479c7b7b61dd23586494ee61ba9d01af8c2aad05d7fffcad6c70e694f6}} 
+Buffer\+Count&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8}\label{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8}} 
+\index{pcs\+::rend@{pcs\+::rend}!Buffer\+Type@{Buffer\+Type}}
+\index{Buffer\+Type@{Buffer\+Type}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{Buffer\+Type}{BufferType}}
+{\footnotesize\ttfamily enum \hyperlink{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8}{pcs\+::rend\+::\+Buffer\+Type}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vertex@{Vertex}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Vertex@{Vertex}}}\mbox{\Hypertarget{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8ab22b929ba52471a02d18bb3a4e4472e6}\label{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8ab22b929ba52471a02d18bb3a4e4472e6}} 
+Vertex&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Index@{Index}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Index@{Index}}}\mbox{\Hypertarget{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8a88fa71f0a6e0dfedbb46d91cc0b37a50}\label{namespacepcs_1_1rend_aeae884f7551ba63fa74eef70a37fc2a8a88fa71f0a6e0dfedbb46d91cc0b37a50}} 
+Index&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68f}\label{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68f}} 
+\index{pcs\+::rend@{pcs\+::rend}!Render\+A\+P\+I\+Type@{Render\+A\+P\+I\+Type}}
+\index{Render\+A\+P\+I\+Type@{Render\+A\+P\+I\+Type}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{Render\+A\+P\+I\+Type}{RenderAPIType}}
+{\footnotesize\ttfamily enum \hyperlink{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68f}{pcs\+::rend\+::\+Render\+A\+P\+I\+Type}}
+
+
+
+Enum that holds the types of A\+P\+Is. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Open\+GL@{Open\+GL}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Open\+GL@{Open\+GL}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68fab356921baf7069b879f7bab06b3ae51e}\label{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68fab356921baf7069b879f7bab06b3ae51e}} 
+Open\+GL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Direct\+X11@{Direct\+X11}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Direct\+X11@{Direct\+X11}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68fae83ad85a1eeae823f580ff178480e822}\label{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68fae83ad85a1eeae823f580ff178480e822}} 
+Direct\+X11&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vulkan@{Vulkan}!pcs\+::rend@{pcs\+::rend}}\index{pcs\+::rend@{pcs\+::rend}!Vulkan@{Vulkan}}}\mbox{\Hypertarget{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68faa8dec94b56741fb1b21110927bf82847}\label{namespacepcs_1_1rend_a9627be55d9b373e41fd62c11e118e68faa8dec94b56741fb1b21110927bf82847}} 
+Vulkan&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepcs_1_1rend_a8e7a766672350b75533bef4c5191ae4d}\label{namespacepcs_1_1rend_a8e7a766672350b75533bef4c5191ae4d}} 
+\index{pcs\+::rend@{pcs\+::rend}!key\+\_\+callback@{key\+\_\+callback}}
+\index{key\+\_\+callback@{key\+\_\+callback}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{key\+\_\+callback()}{key\_callback()}}
+{\footnotesize\ttfamily void pcs\+::rend\+::key\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepcs_1_1rend_ac79ddac7e283a8b63b72499a84603863}\label{namespacepcs_1_1rend_ac79ddac7e283a8b63b72499a84603863}} 
+\index{pcs\+::rend@{pcs\+::rend}!raw\+Data\+Bind@{raw\+Data\+Bind}}
+\index{raw\+Data\+Bind@{raw\+Data\+Bind}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{raw\+Data\+Bind()}{rawDataBind()}}
+{\footnotesize\ttfamily void pcs\+::rend\+::raw\+Data\+Bind (\begin{DoxyParamCaption}\item[{unsigned int}]{bytesize,  }\item[{const void $\ast$}]{data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepcs_1_1rend_a47b6c0b1a163b77ece37e062069e9a53}\label{namespacepcs_1_1rend_a47b6c0b1a163b77ece37e062069e9a53}} 
+\index{pcs\+::rend@{pcs\+::rend}!R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+VE@{R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+VE}}
+\index{R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+VE@{R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+VE}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+V\+E()}{RENDER\_API\_DERIVATIVE()}}
+{\footnotesize\ttfamily struct Open\+A\+PI pcs\+::rend\+::\+R\+E\+N\+D\+E\+R\+\_\+\+A\+P\+I\+\_\+\+D\+E\+R\+I\+V\+A\+T\+I\+VE (\begin{DoxyParamCaption}\item[{Open\+A\+PI}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepcs_1_1rend_a1503c4309f7b12b21e81ea63bd94d2aa}\label{namespacepcs_1_1rend_a1503c4309f7b12b21e81ea63bd94d2aa}} 
+\index{pcs\+::rend@{pcs\+::rend}!window\+\_\+close\+\_\+callback@{window\+\_\+close\+\_\+callback}}
+\index{window\+\_\+close\+\_\+callback@{window\+\_\+close\+\_\+callback}!pcs\+::rend@{pcs\+::rend}}
+\subsubsection{\texorpdfstring{window\+\_\+close\+\_\+callback()}{window\_close\_callback()}}
+{\footnotesize\ttfamily void pcs\+::rend\+::window\+\_\+close\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window }\end{DoxyParamCaption})}
+

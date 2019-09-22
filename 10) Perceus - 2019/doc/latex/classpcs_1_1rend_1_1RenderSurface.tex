@@ -1,0 +1,163 @@
+\hypertarget{classpcs_1_1rend_1_1RenderSurface}{}\section{pcs\+:\+:rend\+:\+:Render\+Surface$<$ T $>$ Class Template Reference}
+\label{classpcs_1_1rend_1_1RenderSurface}\index{pcs\+::rend\+::\+Render\+Surface$<$ T $>$@{pcs\+::rend\+::\+Render\+Surface$<$ T $>$}}
+
+
+Class that handles basic rendering functionality.  
+
+
+
+
+{\ttfamily \#include $<$Render\+Surface.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:rend\+:\+:Render\+Surface$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classpcs_1_1rend_1_1RenderSurface__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:rend\+:\+:Render\+Surface$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{classpcs_1_1rend_1_1RenderSurface__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classpcs_1_1rend_1_1RenderSurface_a908ee596a69b977a74270f03ecc90808}{Render\+Surface} (const T width, const T height)
+\begin{DoxyCompactList}\small\item\em Constructs a new Render Surface object. \end{DoxyCompactList}\item 
+void \hyperlink{classpcs_1_1rend_1_1RenderSurface_ac875e478b7cbf438aa541f31fba6b750}{clear} (\hyperlink{structpcs_1_1Color}{Color} color=\hyperlink{structpcs_1_1Color}{Color}(0, 0, 0)) const
+\begin{DoxyCompactList}\small\item\em Clears the current context. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classpcs_1_1rend_1_1RenderSurface_a79c0b291ed5a7b901fe4233bf8b376f2}{bind} ()=0
+\begin{DoxyCompactList}\small\item\em Binds the current surface. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classpcs_1_1rend_1_1RenderSurface_aacb7218feb1973ee4b0486494fcd8c88}{unbind} () const =0
+\begin{DoxyCompactList}\small\item\em Unbinds the current surface. \end{DoxyCompactList}\item 
+void $\ast$$\ast$ \hyperlink{classpcs_1_1rend_1_1RenderSurface_a54cbf8c34638a82bfe02bc1f1663a4ab}{get\+A\+P\+I\+Loc} ()
+\begin{DoxyCompactList}\small\item\em Returns the api pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \hyperlink{classpcs_1_1rend_1_1RenderSurface_ac991c5aaed973108fa4bb97d605f02cc}{api\+P\+TR} = nullptr
+\begin{DoxyCompactList}\small\item\em Type-\/independant pointer to an object needed by the render api. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class pcs\+::rend\+::\+Render\+Surface$<$ T $>$}
+
+Class that handles basic rendering functionality. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type which \hyperlink{structpcs_1_1Sizable}{Sizable} is to be \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1RenderSurface_a908ee596a69b977a74270f03ecc90808}\label{classpcs_1_1rend_1_1RenderSurface_a908ee596a69b977a74270f03ecc90808}} 
+\index{pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}!Render\+Surface@{Render\+Surface}}
+\index{Render\+Surface@{Render\+Surface}!pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}}
+\subsubsection{\texorpdfstring{Render\+Surface()}{RenderSurface()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\hyperlink{classpcs_1_1rend_1_1RenderSurface}{pcs\+::rend\+::\+Render\+Surface}$<$ T $>$\+::\hyperlink{classpcs_1_1rend_1_1RenderSurface}{Render\+Surface} (\begin{DoxyParamCaption}\item[{const T}]{width,  }\item[{const T}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new Render Surface object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the surface (in px) \\
+\hline
+{\em height} & Height of the surface (in px) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1RenderSurface_a79c0b291ed5a7b901fe4233bf8b376f2}\label{classpcs_1_1rend_1_1RenderSurface_a79c0b291ed5a7b901fe4233bf8b376f2}} 
+\index{pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}!bind@{bind}}
+\index{bind@{bind}!pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}}
+\subsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual void \hyperlink{classpcs_1_1rend_1_1RenderSurface}{pcs\+::rend\+::\+Render\+Surface}$<$ T $>$\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Binds the current surface. 
+
+
+
+Implemented in \hyperlink{classpcs_1_1Window_aa6e00bee6910b3146481dee7aab69cfb}{pcs\+::\+Window}.
+
+\mbox{\Hypertarget{classpcs_1_1rend_1_1RenderSurface_ac875e478b7cbf438aa541f31fba6b750}\label{classpcs_1_1rend_1_1RenderSurface_ac875e478b7cbf438aa541f31fba6b750}} 
+\index{pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}!clear@{clear}}
+\index{clear@{clear}!pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \hyperlink{classpcs_1_1rend_1_1RenderSurface}{pcs\+::rend\+::\+Render\+Surface}$<$ T $>$\+::clear (\begin{DoxyParamCaption}\item[{\hyperlink{structpcs_1_1Color}{Color}}]{color = {\ttfamily \hyperlink{structpcs_1_1Color}{Color}(0,~0,~0)} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears the current context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & color which to clear the buffer to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1RenderSurface_a54cbf8c34638a82bfe02bc1f1663a4ab}\label{classpcs_1_1rend_1_1RenderSurface_a54cbf8c34638a82bfe02bc1f1663a4ab}} 
+\index{pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}!get\+A\+P\+I\+Loc@{get\+A\+P\+I\+Loc}}
+\index{get\+A\+P\+I\+Loc@{get\+A\+P\+I\+Loc}!pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}}
+\subsubsection{\texorpdfstring{get\+A\+P\+I\+Loc()}{getAPILoc()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void$\ast$$\ast$ \hyperlink{classpcs_1_1rend_1_1RenderSurface}{pcs\+::rend\+::\+Render\+Surface}$<$ T $>$\+::get\+A\+P\+I\+Loc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the api pointer. 
+
+\mbox{\Hypertarget{classpcs_1_1rend_1_1RenderSurface_aacb7218feb1973ee4b0486494fcd8c88}\label{classpcs_1_1rend_1_1RenderSurface_aacb7218feb1973ee4b0486494fcd8c88}} 
+\index{pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}!unbind@{unbind}}
+\index{unbind@{unbind}!pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}}
+\subsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+virtual void \hyperlink{classpcs_1_1rend_1_1RenderSurface}{pcs\+::rend\+::\+Render\+Surface}$<$ T $>$\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Unbinds the current surface. 
+
+
+
+Implemented in \hyperlink{classpcs_1_1Window_a4d103be3712fbb051d7c4d446a266de0}{pcs\+::\+Window}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpcs_1_1rend_1_1RenderSurface_ac991c5aaed973108fa4bb97d605f02cc}\label{classpcs_1_1rend_1_1RenderSurface_ac991c5aaed973108fa4bb97d605f02cc}} 
+\index{pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}!api\+P\+TR@{api\+P\+TR}}
+\index{api\+P\+TR@{api\+P\+TR}!pcs\+::rend\+::\+Render\+Surface@{pcs\+::rend\+::\+Render\+Surface}}
+\subsubsection{\texorpdfstring{api\+P\+TR}{apiPTR}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void$\ast$ \hyperlink{classpcs_1_1rend_1_1RenderSurface}{pcs\+::rend\+::\+Render\+Surface}$<$ T $>$\+::api\+P\+TR = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Type-\/independant pointer to an object needed by the render api. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\+Graphics/\+Rendering/\hyperlink{RenderSurface_8h}{Render\+Surface.\+h}\end{DoxyCompactItemize}

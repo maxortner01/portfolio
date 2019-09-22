@@ -1,0 +1,91 @@
+\section{Entities\+:\+:Entity Class Reference}
+\label{class_entities_1_1_entity}\index{Entities\+::\+Entity@{Entities\+::\+Entity}}
+
+
+Super-\/class that represents entities.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_entities_1_1_entity_ad8fa3c6475a2b18bd36d663dca15a9e2}} 
+\textbf{ Entity} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxyref{Entity}{p.}{class_entities_1_1_entity} object. \end{DoxyCompactList}\item 
+\mbox{\label{class_entities_1_1_entity_abb62062e0b438d6f601cf7b967b95d93}} 
+virtual void \textbf{ render} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to handle rendering. \end{DoxyCompactList}\item 
+\mbox{\label{class_entities_1_1_entity_a51ff132fb1a55b2744b5662c9aa3cbab}} 
+virtual void \textbf{ update} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to handle updating. \end{DoxyCompactList}\item 
+std\+::vector$<$ \textbf{ Component} $\ast$ $>$ \textbf{ get\+Components} () const
+\begin{DoxyCompactList}\small\item\em Get the Components object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_entities_1_1_entity_a9b33d8c4ab38ca4481f428e27c19ebdc}} 
+void \textbf{ process} ()
+\begin{DoxyCompactList}\small\item\em Automatically iterates through components and updates them. \end{DoxyCompactList}\item 
+void \textbf{ add\+Component} (\textbf{ Component} $\ast$component)
+\begin{DoxyCompactList}\small\item\em Add Component object to component list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_entities_1_1_entity_a731dcf92e3e1657dd7bd0a0eb0b120bc}} 
+std\+::vector$<$ \textbf{ Component} $\ast$ $>$ \textbf{ components}
+\begin{DoxyCompactList}\small\item\em Various Component objects that define specific entitiy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Super-\/class that represents entities. 
+
+Definition at line \textbf{ 15} of file \textbf{ entity.\+h}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_entities_1_1_entity_a77e7978a632ff534f255fb0492e36963}} 
+\index{Entities\+::\+Entity@{Entities\+::\+Entity}!add\+Component@{add\+Component}}
+\index{add\+Component@{add\+Component}!Entities\+::\+Entity@{Entities\+::\+Entity}}
+\subsubsection{add\+Component()}
+{\footnotesize\ttfamily void Entities\+::\+Entity\+::add\+Component (\begin{DoxyParamCaption}\item[{\textbf{ Component} $\ast$}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Add Component object to component list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & Component pointer object to add to list \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 27} of file \textbf{ entity.\+h}.
+
+\mbox{\label{class_entities_1_1_entity_a35f4be94fcaba85f46f7829ab59b1a78}} 
+\index{Entities\+::\+Entity@{Entities\+::\+Entity}!get\+Components@{get\+Components}}
+\index{get\+Components@{get\+Components}!Entities\+::\+Entity@{Entities\+::\+Entity}}
+\subsubsection{get\+Components()}
+{\footnotesize\ttfamily std\+::vector$<$\textbf{ Component}$\ast$$>$ Entities\+::\+Entity\+::get\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Components object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$\+Component$\ast$$>$ Component pointer object list 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 45} of file \textbf{ entity.\+h}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/entities/entity.\+h\item 
+src/engine/entities/entity.\+cpp\end{DoxyCompactItemize}

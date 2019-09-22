@@ -1,0 +1,87 @@
+\hypertarget{classpcs_1_1Renderer}{}\section{pcs\+:\+:Renderer Class Reference}
+\label{classpcs_1_1Renderer}\index{pcs\+::\+Renderer@{pcs\+::\+Renderer}}
+
+
+{\ttfamily \#include $<$Renderer.\+h$>$}
+
+
+
+Inheritance diagram for pcs\+:\+:Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classpcs_1_1Renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pcs\+:\+:Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classpcs_1_1Renderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \hyperlink{classpcs_1_1Renderer_aba6bdcf38357cdfea898e0f7b3cb1757}{render} (\hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$raw\+Model, \hyperlink{classpcs_1_1ShaderProgram}{Shader\+Program} $\ast$shader, \hyperlink{classpcs_1_1Camera}{Camera} $\ast$camera, unsigned int count=1) const =0
+\item 
+int \hyperlink{classpcs_1_1Renderer_a4d722540c7af2dfee44726d18aa0ce05}{render} (std\+::vector$<$ \hyperlink{classpcs_1_1Model}{Model} $\ast$$>$ models, \hyperlink{classpcs_1_1ShaderProgram}{Shader\+Program} $\ast$shader, \hyperlink{classpcs_1_1Camera}{Camera} $\ast$camera) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \& \hyperlink{classpcs_1_1Renderer_a1b1eba1dbd9d5fa3293bfe2295b0ad9d}{get\+Process\+Time} ()
+\item 
+static unsigned int \& \hyperlink{classpcs_1_1Renderer_a928518fe0b60785048b1a7780df14303}{get\+Thread\+Count} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classpcs_1_1Renderer_adae0f95f56f7261ec52ea32eaa3ad27b}{process\+Models} (\hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$raw\+Model, std\+::vector$<$ \hyperlink{classpcs_1_1Model}{Model} $\ast$$>$ \&models) const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpcs_1_1Renderer_a1b1eba1dbd9d5fa3293bfe2295b0ad9d}\label{classpcs_1_1Renderer_a1b1eba1dbd9d5fa3293bfe2295b0ad9d}} 
+\index{pcs\+::\+Renderer@{pcs\+::\+Renderer}!get\+Process\+Time@{get\+Process\+Time}}
+\index{get\+Process\+Time@{get\+Process\+Time}!pcs\+::\+Renderer@{pcs\+::\+Renderer}}
+\subsubsection{\texorpdfstring{get\+Process\+Time()}{getProcessTime()}}
+{\footnotesize\ttfamily static double\& pcs\+::\+Renderer\+::get\+Process\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpcs_1_1Renderer_a928518fe0b60785048b1a7780df14303}\label{classpcs_1_1Renderer_a928518fe0b60785048b1a7780df14303}} 
+\index{pcs\+::\+Renderer@{pcs\+::\+Renderer}!get\+Thread\+Count@{get\+Thread\+Count}}
+\index{get\+Thread\+Count@{get\+Thread\+Count}!pcs\+::\+Renderer@{pcs\+::\+Renderer}}
+\subsubsection{\texorpdfstring{get\+Thread\+Count()}{getThreadCount()}}
+{\footnotesize\ttfamily static unsigned int\& pcs\+::\+Renderer\+::get\+Thread\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpcs_1_1Renderer_adae0f95f56f7261ec52ea32eaa3ad27b}\label{classpcs_1_1Renderer_adae0f95f56f7261ec52ea32eaa3ad27b}} 
+\index{pcs\+::\+Renderer@{pcs\+::\+Renderer}!process\+Models@{process\+Models}}
+\index{process\+Models@{process\+Models}!pcs\+::\+Renderer@{pcs\+::\+Renderer}}
+\subsubsection{\texorpdfstring{process\+Models()}{processModels()}}
+{\footnotesize\ttfamily double pcs\+::\+Renderer\+::process\+Models (\begin{DoxyParamCaption}\item[{\hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$}]{raw\+Model,  }\item[{std\+::vector$<$ \hyperlink{classpcs_1_1Model}{Model} $\ast$$>$ \&}]{models }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classpcs_1_1Renderer_aba6bdcf38357cdfea898e0f7b3cb1757}\label{classpcs_1_1Renderer_aba6bdcf38357cdfea898e0f7b3cb1757}} 
+\index{pcs\+::\+Renderer@{pcs\+::\+Renderer}!render@{render}}
+\index{render@{render}!pcs\+::\+Renderer@{pcs\+::\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual int pcs\+::\+Renderer\+::render (\begin{DoxyParamCaption}\item[{\hyperlink{classpcs_1_1RawModel}{Raw\+Model} $\ast$}]{raw\+Model,  }\item[{\hyperlink{classpcs_1_1ShaderProgram}{Shader\+Program} $\ast$}]{shader,  }\item[{\hyperlink{classpcs_1_1Camera}{Camera} $\ast$}]{camera,  }\item[{unsigned int}]{count = {\ttfamily 1} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \hyperlink{classpcs_1_1ForwardRenderer_a75527d1b400625fc9b33cddaff76bb33}{pcs\+::\+Forward\+Renderer}.
+
+\mbox{\Hypertarget{classpcs_1_1Renderer_a4d722540c7af2dfee44726d18aa0ce05}\label{classpcs_1_1Renderer_a4d722540c7af2dfee44726d18aa0ce05}} 
+\index{pcs\+::\+Renderer@{pcs\+::\+Renderer}!render@{render}}
+\index{render@{render}!pcs\+::\+Renderer@{pcs\+::\+Renderer}}
+\subsubsection{\texorpdfstring{render()}{render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int pcs\+::\+Renderer\+::render (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \hyperlink{classpcs_1_1Model}{Model} $\ast$$>$}]{models,  }\item[{\hyperlink{classpcs_1_1ShaderProgram}{Shader\+Program} $\ast$}]{shader,  }\item[{\hyperlink{classpcs_1_1Camera}{Camera} $\ast$}]{camera }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Perceus/\+Core/\+Graphics/\+Rendering/\hyperlink{Renderer_8h}{Renderer.\+h}\item 
+src/\+Core/\+Graphics/\+Rendering/\hyperlink{Renderer_8cpp}{Renderer.\+cpp}\end{DoxyCompactItemize}

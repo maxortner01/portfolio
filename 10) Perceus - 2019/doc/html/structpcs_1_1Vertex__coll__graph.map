@@ -1,0 +1,5 @@
+<map id="pcs::Vertex" name="pcs::Vertex">
+<area shape="rect" id="node2" href="$structpcs_1_1Vec3.html" title="pcs::Vec3\&lt; float \&gt;" alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node3" href="$structpcs_1_1Vec2.html" title="pcs::Vec2\&lt; float \&gt;" alt="" coords="160,5,291,32"/>
+<area shape="rect" id="node4" href="$structpcs_1_1Color.html" title="pcs::Color" alt="" coords="315,5,397,32"/>
+</map>

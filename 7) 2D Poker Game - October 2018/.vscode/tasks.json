@@ -1,0 +1,48 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-o", "main.exe",
+
+                "-std=c++11",
+
+                // source files
+                "main.cpp",
+                "./src/engine/source/engine.cpp",
+                "./src/game/source/GameEngine.cpp",
+
+                // include files
+                "-I./src/engine/headers",
+                "-I./src/game/headers",
+
+                // static libraries
+                "-static-libstdc++",
+                "-static-libgcc",
+
+                // libraries
+                "-I./lib/SFML-2.5.1/include",
+                "-L./lib/SFML-2.5.1/lib",
+
+                "-lopenal32",
+                "-lopengl32",
+                "-lsfml-audio",
+                "-lsfml-main",
+                "-lsfml-graphics",
+                "-lsfml-network",
+                "-lsfml-system",
+                "-lsfml-window",
+            ]
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "main.exe"
+        }
+    ]
+}

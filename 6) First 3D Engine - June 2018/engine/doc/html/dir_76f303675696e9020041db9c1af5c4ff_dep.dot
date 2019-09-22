@@ -1,0 +1,11 @@
+digraph "src/engine/entities" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_2052808828190f934b76e979ee65af8a {
+    graph [ bgcolor="#ddddee", pencolor="black", label="engine" fontname="Helvetica", fontsize="10", URL="dir_2052808828190f934b76e979ee65af8a.html"]
+  dir_76f303675696e9020041db9c1af5c4ff [shape=box, label="entities", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_76f303675696e9020041db9c1af5c4ff.html"];
+  }
+  dir_e8e9bf7d18dab0ad77df57a1421ae9cd [shape=box label="util" URL="dir_e8e9bf7d18dab0ad77df57a1421ae9cd.html"];
+  dir_76f303675696e9020041db9c1af5c4ff->dir_e8e9bf7d18dab0ad77df57a1421ae9cd [headlabel="1", labeldistance=1.5 headhref="dir_000004_000005.html"];
+}

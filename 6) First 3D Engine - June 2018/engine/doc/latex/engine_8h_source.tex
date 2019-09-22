@@ -1,0 +1,39 @@
+\section{engine.\+h}
+\label{engine_8h_source}\index{src/engine/engine.\+h@{src/engine/engine.\+h}}
+
+\begin{DoxyCode}
+00001 
+00013 \textcolor{preprocessor}{#ifndef ENGINE\_H\_}
+00014 \textcolor{preprocessor}{#define ENGINE\_H\_}
+00015 
+00016 \textcolor{preprocessor}{#include <iostream>}
+00017 \textcolor{preprocessor}{#include <string>}
+00018 \textcolor{preprocessor}{#include <math.h>}
+00019 
+00020 \textcolor{preprocessor}{#include <GL/glew.h>}
+00021 \textcolor{preprocessor}{#include <GLFW/glfw3.h>}
+00022 
+00023 \textcolor{preprocessor}{#include "controllers/screen.h"}
+00024 \textcolor{preprocessor}{#include "window.h"}
+00025 
+00026 \textcolor{keyword}{using namespace }Controllers;
+00027 
+00028 \textcolor{keyword}{struct }Engine
+00029 \{
+00031     \textcolor{keywordtype}{int} frame = 0;
+00032 
+00034     \textcolor{keyword}{static} Window* window;
+00035 
+00037     \textcolor{keyword}{static} Screen* screen;
+00038 
+00045     Engine(\textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} height, std::string title);
+00046     
+00048     \textcolor{keywordtype}{void} loop();
+00049 
+00051     \textcolor{keywordtype}{void} clear();
+00052 
+00057     \textcolor{keyword}{inline} \textcolor{keywordtype}{void} setScreen(Screen* currentScreen) \{ screen = currentScreen; \}
+00058 \};
+00059 
+00060 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* ENGINE\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

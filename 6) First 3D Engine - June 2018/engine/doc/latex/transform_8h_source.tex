@@ -1,0 +1,53 @@
+\section{transform.\+h}
+\label{transform_8h_source}\index{src/engine/components/transform.\+h@{src/engine/components/transform.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef TRANSFORM\_H\_}
+00002 \textcolor{preprocessor}{#define TRANSFORM\_H\_}
+00003 
+00004 \textcolor{preprocessor}{#include "component.h"}
+00005 
+00006 \textcolor{preprocessor}{#include <gtc/matrix\_transform.hpp>}
+00007 \textcolor{preprocessor}{#include <glm.hpp>}
+00008 
+00009 \textcolor{keyword}{using namespace }glm;
+00010 \textcolor{keyword}{using namespace }Components;
+00011 
+00012 \textcolor{keyword}{namespace }Components \{
+00013 
+00014     \textcolor{keyword}{class }Transform : \textcolor{keyword}{public} Component
+00015     \{
+00016     \textcolor{keyword}{private}:
+00017         vec3 position;
+00018         vec3 scale    = vec3(1, 1, 1);
+00019         vec3 rotation = vec3(0, 0, 0);
+00020 
+00021     \textcolor{keyword}{public}:
+00022         Transform();
+00023         Transform(\textcolor{keywordtype}{float} x);
+00024         Transform(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y);
+00025         Transform(\textcolor{keywordtype}{float} x, \textcolor{keywordtype}{float} y, \textcolor{keywordtype}{float} z);
+00026         Transform(vec3 pos);
+00027 
+00028         mat4 getModelMatrix() \textcolor{keyword}{const};
+00029 
+00030         \textcolor{keywordtype}{void} setTranslation(vec3 t);
+00031         \textcolor{keywordtype}{void} addTranslation(vec3 amt);
+00032 
+00033         \textcolor{keywordtype}{void} setScale(vec3 s);
+00034         \textcolor{keywordtype}{void} addScale(vec3 amt);
+00035         
+00036         \textcolor{keywordtype}{void} setRotation(vec3 s);
+00037         \textcolor{keywordtype}{void} addRotation(vec3 amt);
+00038 
+00039         \textcolor{keyword}{inline} vec3 getPosition()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} position; \}
+00040         \textcolor{keyword}{inline} vec3 getRotation()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} rotation; \}
+00041         \textcolor{keyword}{inline} vec3 getScale()\textcolor{keyword}{    const }\{ \textcolor{keywordflow}{return} scale;    \}
+00042 
+00043         \textcolor{keywordtype}{void} update();  
+00044     \};
+00045 
+00046 \}
+00047 
+00048 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* TRANSFORM\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

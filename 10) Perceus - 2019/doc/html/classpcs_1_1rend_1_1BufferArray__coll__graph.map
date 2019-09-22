@@ -1,0 +1,5 @@
+<map id="pcs::rend::BufferArray" name="pcs::rend::BufferArray">
+<area shape="rect" id="node2" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="11,102,175,129"/>
+<area shape="rect" id="node3" href="$structpcs_1_1rend_1_1RenderSettings.html" title="Container for choosing various API types. " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node4" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; BufferArray \&gt;" alt="" coords="199,95,338,136"/>
+</map>
