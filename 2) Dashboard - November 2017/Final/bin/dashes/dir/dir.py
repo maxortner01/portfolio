@@ -109,7 +109,8 @@ class base:
 
 
             except Exception as ex:
-                print str(ex) + "lll"
+                #print str(ex) + "lll"
+                print ("You must activate UDP telemetry data sending in the menu of the game")
                 rpms = 0
                 maxrpm = 0
                 throttle = 0

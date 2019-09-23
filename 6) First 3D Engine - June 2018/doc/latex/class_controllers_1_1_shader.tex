@@ -1,0 +1,108 @@
+\section{Controllers\+:\+:Shader Class Reference}
+\label{class_controllers_1_1_shader}\index{Controllers\+::\+Shader@{Controllers\+::\+Shader}}
+
+
+Creates, compiles, and manages specific shaders Initializes shader functions and applies them to current Open\+GL context.  
+
+
+
+
+{\ttfamily \#include $<$shader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Shader} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxyref{Shader}{p.}{class_controllers_1_1_shader} object, defaults to \char`\"{}shader\char`\"{} if none is found. \end{DoxyCompactList}\item 
+\mbox{\label{class_controllers_1_1_shader_ac31a22d14fe2b6153bbc04db2479766d}} 
+void \textbf{ bind} ()
+\begin{DoxyCompactList}\small\item\em Use this program. \end{DoxyCompactList}\item 
+\mbox{\label{class_controllers_1_1_shader_a208e2c0e6c5922d963abe7449921b05c}} 
+void {\bfseries unbind} ()
+\item 
+void \textbf{ set\+Matrix} (glm\+::mat4 matrix)
+\begin{DoxyCompactList}\small\item\em Pass matrix object to uniform location. \end{DoxyCompactList}\item 
+void \textbf{ set\+Uniform} (const char $\ast$name, const float value)
+\begin{DoxyCompactList}\small\item\em Set the specific uniform to value in shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates, compiles, and manages specific shaders Initializes shader functions and applies them to current Open\+GL context. 
+
+Definition at line \textbf{ 28} of file \textbf{ shader.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_controllers_1_1_shader_aa3c058973d36e2d5148d759d9bfc7f6f}} 
+\index{Controllers\+::\+Shader@{Controllers\+::\+Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!Controllers\+::\+Shader@{Controllers\+::\+Shader}}
+\subsubsection{Shader()}
+{\footnotesize\ttfamily Controllers\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxyref{Shader}{p.}{class_controllers_1_1_shader} object, defaults to \char`\"{}shader\char`\"{} if none is found. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of shader (without extentions). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 19} of file \textbf{ shader.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_controllers_1_1_shader_a08d91b0353674a0bfabc53976ed7bd05}} 
+\index{Controllers\+::\+Shader@{Controllers\+::\+Shader}!set\+Matrix@{set\+Matrix}}
+\index{set\+Matrix@{set\+Matrix}!Controllers\+::\+Shader@{Controllers\+::\+Shader}}
+\subsubsection{set\+Matrix()}
+{\footnotesize\ttfamily void Controllers\+::\+Shader\+::set\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Pass matrix object to uniform location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Matrix to pass to shader. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 118} of file \textbf{ shader.\+cpp}.
+
+Here is the caller graph for this function\+:
+% FIG 0
+\mbox{\label{class_controllers_1_1_shader_ab921b0db41d259a12eb560953ac702e3}} 
+\index{Controllers\+::\+Shader@{Controllers\+::\+Shader}!set\+Uniform@{set\+Uniform}}
+\index{set\+Uniform@{set\+Uniform}!Controllers\+::\+Shader@{Controllers\+::\+Shader}}
+\subsubsection{set\+Uniform()}
+{\footnotesize\ttfamily void Controllers\+::\+Shader\+::set\+Uniform (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const float}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the specific uniform to value in shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of uniform in the shader. \\
+\hline
+{\em value} & Float value to set the uniform as. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 135} of file \textbf{ shader.\+cpp}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/controllers/shader.\+h\item 
+src/engine/controllers/shader.\+cpp\end{DoxyCompactItemize}

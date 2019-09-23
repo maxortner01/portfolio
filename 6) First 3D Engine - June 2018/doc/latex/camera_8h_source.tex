@@ -1,0 +1,60 @@
+\section{camera.\+h}
+\label{camera_8h_source}\index{src/engine/controllers/camera.\+h@{src/engine/controllers/camera.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CAMERA\_H\_}
+00002 \textcolor{preprocessor}{#define CAMERA\_H\_}
+00003 
+00004 \textcolor{preprocessor}{#include "engine/controllers/mouse.h"}
+00005 \textcolor{preprocessor}{#include "engine/controllers/keyboard.h"}
+00006 \textcolor{preprocessor}{#include "engine/components/transform.h"}
+00007 \textcolor{preprocessor}{#include "engine/util/Geometry.h"}
+00008 \textcolor{preprocessor}{#include "engine/util/CML.h"}
+00009 \textcolor{preprocessor}{#include "engine/engine.h"}
+00010 
+00011 \textcolor{preprocessor}{#include <glm.hpp>}
+00012 
+00013 \textcolor{preprocessor}{#include <gtc/matrix\_transform.hpp>}
+00014 \textcolor{preprocessor}{#include <GL/glew.h>}
+00015 
+00016 \textcolor{keyword}{using namespace }CML;
+00017 \textcolor{keyword}{using namespace }glm;
+00018 
+00019 \textcolor{keyword}{using namespace }Controllers;
+00020 
+00021 \textcolor{keyword}{namespace }Controllers \{
+00022 
+00030     \textcolor{keyword}{class }Camera
+00031     \{
+00032     \textcolor{keyword}{private}:
+00034         \textcolor{keywordtype}{float}     zNear, zFar, FOV, aspectRatio;
+00036         \textcolor{keywordtype}{float}     mouse\_sensitivity;
+00037 
+00039         \textcolor{keywordtype}{float}     fog\_start;
+00041         \textcolor{keywordtype}{float}     fog\_distance;
+00043         mat4 projectionMatrix;
+00044 
+00045     \textcolor{keyword}{public}:
+00047         Transform* transform;
+00048 
+00054         Camera();
+00055 
+00060         \textcolor{keywordtype}{void} Pollevents();
+00061 
+00067         \textcolor{keywordtype}{float} getFogStart()\textcolor{keyword}{    const }\{ \textcolor{keywordflow}{return} fog\_start; \}
+00073         \textcolor{keywordtype}{float} getFogDistance()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} fog\_distance; \}
+00074 
+00080         mat4 genProjection();
+00086         mat4 getProjection() \{ \textcolor{keywordflow}{return} projectionMatrix; \}
+00092         mat4 getViewMatrix();
+00093 
+00095         \textcolor{keywordtype}{void} moveForward    (\textcolor{keywordtype}{float} speed);
+00097         \textcolor{keywordtype}{void} moveBackward   (\textcolor{keywordtype}{float} speed);
+00099         \textcolor{keywordtype}{void} moveLeft       (\textcolor{keywordtype}{float} speed);
+00101         \textcolor{keywordtype}{void} moveRight      (\textcolor{keywordtype}{float} speed);
+00102     \};
+00103 
+00104 \}
+00105 
+00106 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* CAMERA\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -1,0 +1,76 @@
+\section{C\+M\+L.\+h}
+\label{_c_m_l_8h_source}\index{src/engine/util/\+C\+M\+L.\+h@{src/engine/util/\+C\+M\+L.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef CML\_H\_}
+00002 \textcolor{preprocessor}{#define CML\_H\_}
+00003 
+00004 \textcolor{preprocessor}{#include <iostream>}
+00005 \textcolor{preprocessor}{#include <math.h>}
+00006 
+00007 \textcolor{keyword}{namespace }CML
+00008 \{
+00009     \textcolor{keyword}{const} \textcolor{keywordtype}{float} pi = std::acos(-1);
+00010     \textcolor{keyword}{enum} MATenum \{MAT\_EMPTY, MAT\_INDENTITY\};
+00011 
+00012     \textcolor{comment}{/* ------- CONVERSIONS */}
+00013     \textcolor{keywordtype}{float} radians(\textcolor{keywordtype}{float} degrees);
+00014 
+00015     \textcolor{keyword}{struct }vert3f
+00016     \{
+00017         \textcolor{keywordtype}{float} x, y, z;
+00018 
+00019         vert3f(\textcolor{keywordtype}{float} lx);
+00020         vert3f(\textcolor{keywordtype}{float} lx, \textcolor{keywordtype}{float} ly);
+00021         vert3f(\textcolor{keywordtype}{float} lx, \textcolor{keywordtype}{float} ly, \textcolor{keywordtype}{float} lz);
+00022 
+00023         \textcolor{keyword}{inline} \textcolor{keywordtype}{void} add(vert3f* amt) \{ x += amt->x; y += amt->y; z += amt->z; \}
+00024     \};
+00025 
+00026     \textcolor{keyword}{struct }vert2f
+00027     \{
+00028         \textcolor{keywordtype}{float} x, y;
+00029 
+00030         vert2f(\textcolor{keywordtype}{float} lx);
+00031         vert2f(\textcolor{keywordtype}{float} lx, \textcolor{keywordtype}{float} ly);
+00032     \};
+00033 
+00034     \textcolor{keyword}{class }Matrix4f
+00035     \{
+00036     \textcolor{keyword}{public}:
+00037         \textcolor{keywordtype}{float} m[4][4];
+00038         
+00039         \textcolor{comment}{//Initialize float matrix pointer to 0 and preset}
+00040         Matrix4f();
+00041         Matrix4f(CML::MATenum initval);
+00042         
+00043         \textcolor{keywordtype}{void}  init(CML::MATenum val);
+00044 
+00045         \textcolor{keywordtype}{void}  mult(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{float} val);
+00046         \textcolor{keywordtype}{void}  add(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{float} val);
+00047         \textcolor{keywordtype}{void}  \textcolor{keyword}{set}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keywordtype}{float} val);
+00048         \textcolor{keywordtype}{float} \textcolor{keyword}{get}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y);
+00049 
+00050         Matrix4f* mul( Matrix4f* matrix );
+00051         Matrix4f* mul( vert3f*   point  );
+00052 
+00053         \textcolor{comment}{//Translate matrix by translation}
+00054         \textcolor{keywordtype}{void} translate(vert3f* translation);
+00055         \textcolor{keywordtype}{void} setTranslation(vert3f* translation);
+00056 
+00057         \textcolor{comment}{//Scale matrix by factor}
+00058         \textcolor{keywordtype}{void} scale(vert3f* factor);
+00059         \textcolor{keywordtype}{void} setScale(vert3f* factor);
+00060 
+00061         \textcolor{comment}{//Rotate matrix by degrees}
+00062         \textcolor{keywordtype}{void} rotate(vert3f* rotation);
+00063 
+00064         \textcolor{comment}{//Return float matrix}
+00065         \textcolor{comment}{//float** getValues();}
+00066     \};
+00067 
+00068 
+00069 \}
+00070 
+00071 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* CML\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

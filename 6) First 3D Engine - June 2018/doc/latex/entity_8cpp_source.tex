@@ -1,0 +1,20 @@
+\section{entity.\+cpp}
+\label{entity_8cpp_source}\index{src/engine/entities/entity.\+cpp@{src/engine/entities/entity.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "entity.h"}
+00002 
+00003 Entities::Entity::Entity() \{
+00004     
+00005 \}
+00006 
+00007 \textcolor{keywordtype}{void} Entities::Entity::process() \{
+00008     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < components.size(); i++) \{
+00009         components[i]->update();
+00010     \}
+00011 \}
+00012 
+00013 \textcolor{keywordtype}{void} Entities::Entity::addComponent(Component* component) \{
+00014     components.push\_back(component);
+00015 \}
+\end{DoxyCode}

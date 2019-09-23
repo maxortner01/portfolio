@@ -1,0 +1,48 @@
+\section{model.\+h}
+\label{model_8h_source}\index{src/engine/components/model.\+h@{src/engine/components/model.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MODEL\_H\_}
+00002 \textcolor{preprocessor}{#define MODEL\_H\_}
+00003 
+00004 \textcolor{preprocessor}{#include <vector>}
+00005 \textcolor{preprocessor}{#include <iostream>}
+00006 \textcolor{preprocessor}{#include <GL/glew.h>}
+00007 
+00008 \textcolor{preprocessor}{#include <glm.hpp>}
+00009 
+00010 \textcolor{preprocessor}{#include "engine/controllers/camera.h"}
+00011 \textcolor{preprocessor}{#include "engine/controllers/shader.h"}
+00012 
+00013 \textcolor{preprocessor}{#include "component.h"}
+00014 
+00015 \textcolor{keyword}{using namespace }Controllers;
+00016 \textcolor{keyword}{using namespace }Components;
+00017 
+00018 \textcolor{keyword}{namespace }Components \{
+00019     
+00025     \textcolor{keyword}{class }Model : \textcolor{keyword}{public} Component
+00026     \{
+00027     \textcolor{keyword}{private}:
+00028         \textcolor{keyword}{enum} Buffers \{VERTICES, INDICES\};
+00029 
+00031         GLuint buffers[2];
+00032 
+00034         std::vector<float> vertexData;
+00036         \textcolor{keywordtype}{bool} outlines;
+00037 
+00038     \textcolor{keyword}{public}:
+00045         Model(std::vector<float> vertices, std::vector<float> colors);
+00046 
+00054         \textcolor{keywordtype}{void} render(Shader* shader, glm::mat4 model, Camera* camera);
+00061         \textcolor{keywordtype}{void} newVertices(std::vector<float> vertices, std::vector<float> colors);
+00062 
+00064         \textcolor{keywordtype}{void} toggleOutlines();
+00065 
+00067         \textcolor{keywordtype}{void} update();
+00068     \};
+00069 
+00070 \}
+00071 
+00072 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* MODEL\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

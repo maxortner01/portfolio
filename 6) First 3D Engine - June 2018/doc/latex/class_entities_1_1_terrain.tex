@@ -1,0 +1,88 @@
+\section{Entities\+:\+:Terrain Class Reference}
+\label{class_entities_1_1_terrain}\index{Entities\+::\+Terrain@{Entities\+::\+Terrain}}
+
+
+Handles sector generation and storage Using predefined dimensions (S\+E\+C\+T\+O\+R\+\_\+\+W\+I\+D\+TH and S\+E\+C\+T\+O\+R\+\_\+\+H\+E\+I\+G\+HT), \doxyref{Terrain}{p.}{class_entities_1_1_terrain} class handles generation of Sector structs which each hold a model that renders that specific sector to the screen.  
+
+
+
+
+{\ttfamily \#include $<$terrain.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Terrain} (\textbf{ Camera} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxyref{Terrain}{p.}{class_entities_1_1_terrain} object. \end{DoxyCompactList}\item 
+\mbox{\label{class_entities_1_1_terrain_a56992faf594dadfdf2264c2f524ea12f}} 
+void \textbf{ render} ()
+\begin{DoxyCompactList}\small\item\em Iterates through sectors and renders them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \textbf{ getval} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Run position through layered simplex noise algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles sector generation and storage Using predefined dimensions (S\+E\+C\+T\+O\+R\+\_\+\+W\+I\+D\+TH and S\+E\+C\+T\+O\+R\+\_\+\+H\+E\+I\+G\+HT), \doxyref{Terrain}{p.}{class_entities_1_1_terrain} class handles generation of Sector structs which each hold a model that renders that specific sector to the screen. 
+
+Definition at line \textbf{ 36} of file \textbf{ terrain.\+h}.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_entities_1_1_terrain_ac05b3561c7c52986bfa7fee3ffdd5c4c}} 
+\index{Entities\+::\+Terrain@{Entities\+::\+Terrain}!Terrain@{Terrain}}
+\index{Terrain@{Terrain}!Entities\+::\+Terrain@{Entities\+::\+Terrain}}
+\subsubsection{Terrain()}
+{\footnotesize\ttfamily Terrain\+::\+Terrain (\begin{DoxyParamCaption}\item[{\textbf{ Camera} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxyref{Terrain}{p.}{class_entities_1_1_terrain} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & Current camera pointer object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 73} of file \textbf{ terrain.\+cpp}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_entities_1_1_terrain_aa235f623521eb69cc38e7bb254592d2f}} 
+\index{Entities\+::\+Terrain@{Entities\+::\+Terrain}!getval@{getval}}
+\index{getval@{getval}!Entities\+::\+Terrain@{Entities\+::\+Terrain}}
+\subsubsection{getval()}
+{\footnotesize\ttfamily float Terrain\+::getval (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Run position through layered simplex noise algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & First dimension of location in the terrain. \\
+\hline
+{\em y} & Second dimension of location in the terrain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Layered simplex noise value at (x, y) 
+\end{DoxyReturn}
+
+
+Definition at line \textbf{ 56} of file \textbf{ terrain.\+cpp}.
+
+Here is the call graph for this function\+:
+% FIG 0
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/engine/entities/terrain.\+h\item 
+src/engine/entities/terrain.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,21 @@
+digraph "Components::Model::render"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node6 [label="Components::Model::\lrender",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Controllers::Camera\l::getProjection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_camera.html#ac70188bdd9e1942fb580e76f14e380a9",tooltip="Get the Projection object. "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Controllers::Camera\l::getViewMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_camera.html#a26c21a39c99b37158c16b0b16a3b0a56",tooltip="Get the View Matrix object. "];
+  Node6 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Controllers::Shader\l::bind",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_shader.html#ac31a22d14fe2b6153bbc04db2479766d",tooltip="Use this program. "];
+  Node6 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Controllers::Shader\l::setMatrix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_shader.html#a08d91b0353674a0bfabc53976ed7bd05",tooltip="Pass matrix object to uniform location. "];
+  Node6 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Controllers::Shader\l::setUniform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_shader.html#ab921b0db41d259a12eb560953ac702e3",tooltip="Set the specific uniform to value in shader. "];
+  Node6 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Controllers::Camera\l::getFogStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_camera.html#ae2fee77ffd8b5006d7c21a0b12edc841",tooltip="Get the fog_start object. "];
+  Node6 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Controllers::Camera\l::getFogDistance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_camera.html#a357c9bf02602f1ec89f4528a21b35c0d",tooltip="Get the fog_distance object. "];
+}

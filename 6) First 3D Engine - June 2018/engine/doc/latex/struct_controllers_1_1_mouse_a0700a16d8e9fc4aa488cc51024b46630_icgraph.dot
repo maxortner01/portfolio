@@ -1,9 +1,0 @@
-digraph "Controllers::Mouse::getMousePos"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="Controllers::Mouse\l::getMousePos",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="Controllers::Camera\l::Pollevents",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_camera.html#acd5e6f182e1d53b00a3e49309cc13840",tooltip="Poll keyboard events and movement Updates camera transformation according to keypress data..."];
-}

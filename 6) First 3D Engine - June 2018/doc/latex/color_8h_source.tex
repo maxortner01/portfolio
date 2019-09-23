@@ -1,0 +1,39 @@
+\section{color.\+h}
+\label{color_8h_source}\index{src/engine/components/color.\+h@{src/engine/components/color.\+h}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef COLOR\_H\_}
+00002 \textcolor{preprocessor}{#define COLOR\_H\_}
+00003 
+00004 \textcolor{preprocessor}{#include <glm.hpp>}
+00005 \textcolor{preprocessor}{#include "component.h"}
+00006 
+00007 \textcolor{keyword}{using namespace }glm;
+00008 \textcolor{keyword}{using namespace }Components;
+00009 
+00010 \textcolor{keyword}{namespace }Components \{    
+00011 
+00015     \textcolor{keyword}{class }Color : \textcolor{keyword}{public} Component
+00016     \{
+00017     \textcolor{keyword}{private}:
+00019         \textcolor{keywordtype}{float}   alpha;
+00021         vec3    color;
+00022 
+00023     \textcolor{keyword}{public}:
+00031         Color(\textcolor{keywordtype}{float} r, \textcolor{keywordtype}{float} g, \textcolor{keywordtype}{float} b);
+00040         Color(\textcolor{keywordtype}{float} r, \textcolor{keywordtype}{float} g, \textcolor{keywordtype}{float} b, \textcolor{keywordtype}{float} a);
+00041 
+00047         \textcolor{keyword}{inline} \textcolor{keywordtype}{void}  setAlpha(\textcolor{keywordtype}{float} a) \{ alpha = a;    \}
+00053         \textcolor{keyword}{inline} \textcolor{keywordtype}{float} getAlpha(\textcolor{keywordtype}{void})    \{ \textcolor{keywordflow}{return} alpha; \}
+00054 
+00060         \textcolor{keyword}{inline} \textcolor{keywordtype}{void}  setColor(vec3 c)                     \{ color = c; \}
+00068         \textcolor{keyword}{inline} \textcolor{keywordtype}{void}  setColor(\textcolor{keywordtype}{float} r, \textcolor{keywordtype}{float} g, \textcolor{keywordtype}{float} b)  \{ color = vec3(r, g, b); \}
+00074         \textcolor{keyword}{inline} vec3  getColor(\textcolor{keywordtype}{void})                       \{ \textcolor{keywordflow}{return} color; \}
+00075 
+00080         \textcolor{keywordtype}{void} update();
+00081     \};
+00082 
+00083 \}
+00084 
+00085 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* COLOR\_H\_ */}\textcolor{preprocessor}{}
+\end{DoxyCode}

@@ -1,2 +1,0 @@
-This program was made to interface with most racing games in order to compile the positional data of the current car. The idea was to compile this information and use it to drive an external
-simulation seat. The software was made to completion, the physical simulation not so much.
