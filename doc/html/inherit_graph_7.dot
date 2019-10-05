@@ -1,7 +1,0 @@
-digraph "Graphical Class Hierarchy"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node0 [label="Controllers::Screen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_controllers_1_1_screen.html",tooltip="Super class used to implement a variety of different screens Subordinate classes use this framework t..."];
-}

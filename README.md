@@ -1,8 +1,7 @@
-# First 3D Engine
+# 2D Poker Game
 
-After my previous attempts in 3D graphics, I finally moved from the theory and into practice. This was the first time I stream-lined my OpenGL usage as well. This time I focused on memory management in
-terms of objects that needed to be rendered, as well as using polymorphism to expand the capabilities of the engine. This was the first time I was able to move passed boiler-plate rendering code and focus on more over-arching things like infinite world generation and conservation of memory.
+After doing 3D graphics for a while, I took a small break and started focusing my efforts on understanding an efficient architecture for a graphics engine (which is arguably the most important part). Thus came a basic architecture that I continue to use for smooth animations, as well as the general framework for maximizing speed.
 
 ## Images
 
-![](imgs/Engine&#32;1.png)
+![](imgs/Poker.png)

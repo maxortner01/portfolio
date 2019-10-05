@@ -4,61 +4,40 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "g++",
+            "label": "compile",
             "type": "shell",
             "command": "g++",
             "args": [
-                //OUTPUT NAME
                 "-o", "main.exe",
 
                 "-std=c++11",
 
-                //SOURCE FILES
-                "./src/main/main.cpp",
-                "./src/main/screens/CurrentScreen.cpp",
+                // source files
+                "main.cpp",
+                "./src/engine/source/engine.cpp",
+                "./src/game/source/GameEngine.cpp",
 
-                "./src/engine/engine.cpp", 
-                "./src/engine/window.cpp",
+                // include files
+                "-I./src/engine/headers",
+                "-I./src/game/headers",
 
-                "./src/engine/entities/entity.cpp",
-                "./src/engine/entities/terrain.cpp",
-
-                "./src/engine/controllers/screen.cpp",
-                "./src/engine/controllers/shader.cpp",
-                "./src/engine/controllers/camera.cpp",
-                "./src/engine/controllers/keyboard.cpp",
-                "./src/engine/controllers/mouse.cpp",
-                
-                "./src/engine/components/component.cpp",
-                "./src/engine/components/transform.cpp",
-                "./src/engine/components/color.cpp",
-                "./src/engine/components/model.cpp",
-
-                "./src/engine/util/CML.cpp",
-                "./src/engine/util/vert.cpp",
-                "./src/engine/util/Geometry.cpp",
-                "./src/engine/util/SimplexNoise.cpp",
-
-                //INCLUDE PATHS
-                "-I./src/",
-                "-I./lib/glfw/include",
-                "-I./lib/glew/include",
-                "-I./lib/glm/glm",
-                "-I./lib/glm/",
-                "-I./lib/SimplexNoise/include",
-
-                //STATIC LIBRARIES
+                // static libraries
                 "-static-libstdc++",
                 "-static-libgcc",
 
-                //LIBRARY PATHS
-                "-L./lib/glfw/lib-mingw",         "-lglfw3dll",
-                "-L./lib/glew/lib/Release/Win32", "-lglew32",
-                "-lopengl32",
+                // libraries
+                "-I./lib/SFML-2.5.1/include",
+                "-L./lib/SFML-2.5.1/lib",
 
-                //DEPENDANT LIBRARIES
-                ],
-            "isBuildCommand": true
+                "-lopenal32",
+                "-lopengl32",
+                "-lsfml-audio",
+                "-lsfml-main",
+                "-lsfml-graphics",
+                "-lsfml-network",
+                "-lsfml-system",
+                "-lsfml-window",
+            ]
         },
         {
             "label": "run",
