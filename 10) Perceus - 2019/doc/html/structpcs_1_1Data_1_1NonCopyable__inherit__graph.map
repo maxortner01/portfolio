@@ -1,5 +1,0 @@
-<map id="pcs::Data::NonCopyable" name="pcs::Data::NonCopyable">
-<area shape="rect" id="node2" href="$classpcs_1_1rend_1_1RenderSurface.html" title="Class that handles basic rendering functionality. " alt="" coords="5,87,208,114"/>
-<area shape="rect" id="node3" href="$classpcs_1_1rend_1_1RenderSurface.html" title="pcs::rend::RenderSurface\l\&lt; unsigned int \&gt;" alt="" coords="232,80,403,121"/>
-<area shape="rect" id="node4" href="$classpcs_1_1Window.html" title="Class that handles window functionality. Uses the specified RenderAPI to construct a window as well a..." alt="" coords="268,169,367,196"/>
-</map>

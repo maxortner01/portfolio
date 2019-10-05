@@ -1,6 +1,0 @@
-﻿  main.cpp
-  Graph.cpp
-c:\users\max\source\repos\graphing\graphing\src\source\graph.cpp(307): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  MainScene.cpp
-  Generating Code...
-  Graphing.vcxproj -> C:\Users\Max\source\repos\Graphing\bin\Debug-Win32\Graphing.exe

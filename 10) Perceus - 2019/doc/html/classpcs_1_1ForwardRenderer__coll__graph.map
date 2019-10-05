@@ -1,6 +1,0 @@
-<map id="pcs::ForwardRenderer" name="pcs::ForwardRenderer">
-<area shape="rect" id="node2" href="$classpcs_1_1Renderer.html" title="pcs::Renderer" alt="" coords="41,178,145,205"/>
-<area shape="rect" id="node3" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="11,95,175,121"/>
-<area shape="rect" id="node4" href="$structpcs_1_1rend_1_1RenderSettings.html" title="Container for choosing various API types. " alt="" coords="5,5,180,32"/>
-<area shape="rect" id="node5" href="$classpcs_1_1Data_1_1Singleton.html" title="pcs::Data::Singleton\l\&lt; ForwardRenderer \&gt;" alt="" coords="169,171,315,212"/>
-</map>

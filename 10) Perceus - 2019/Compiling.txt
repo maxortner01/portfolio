@@ -1,1 +1,0 @@
-You can use cmake to compile this project. Just direct to the build folder and run cmake with the default configurations.

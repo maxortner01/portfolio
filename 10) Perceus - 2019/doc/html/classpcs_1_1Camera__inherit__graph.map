@@ -1,6 +1,0 @@
-<map id="pcs::Camera" name="pcs::Camera">
-<area shape="rect" id="node2" href="$classpcs_1_1Transformable3D.html" title="pcs::Transformable3D\l\&lt; float \&gt;" alt="" coords="5,95,156,136"/>
-<area shape="rect" id="node3" href="$classpcs_1_1Transformable.html" title="pcs::Transformable\l\&lt; Vec3\&lt; float \&gt; \&gt;" alt="" coords="13,5,148,47"/>
-<area shape="rect" id="node4" href="$classpcs_1_1Data_1_1ObjectUID.html" title="Base class that creates a 64&#45;bit unique ID. " alt="" coords="181,102,330,129"/>
-<area shape="rect" id="node5" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; ObjectUID, U64 \&gt;" alt="" coords="185,5,325,47"/>
-</map>

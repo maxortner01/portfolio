@@ -1,6 +1,0 @@
-<map id="pcs::TextureArray" name="pcs::TextureArray">
-<area shape="rect" id="node2" href="$classpcs_1_1Texture.html" title="Represents a texture. " alt="" coords="43,185,138,212"/>
-<area shape="rect" id="node3" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; Texture \&gt;" alt="" coords="5,95,144,136"/>
-<area shape="rect" id="node4" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="169,102,333,129"/>
-<area shape="rect" id="node5" href="$structpcs_1_1rend_1_1RenderSettings.html" title="Container for choosing various API types. " alt="" coords="163,5,338,32"/>
-</map>

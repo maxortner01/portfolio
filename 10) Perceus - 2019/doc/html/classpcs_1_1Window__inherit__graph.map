@@ -1,8 +1,0 @@
-<map id="pcs::Window" name="pcs::Window">
-<area shape="rect" id="node2" href="$classpcs_1_1rend_1_1RenderSurface.html" title="pcs::rend::RenderSurface\l\&lt; unsigned int \&gt;" alt="" coords="217,27,388,69"/>
-<area shape="rect" id="node3" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="5,5,169,32"/>
-<area shape="rect" id="node4" href="$structpcs_1_1Sizable.html" title="pcs::Sizable\&lt; unsigned\l int \&gt;" alt="" coords="8,57,167,98"/>
-<area shape="rect" id="node5" href="$classpcs_1_1Data_1_1Status.html" title="pcs::Data::Status\&lt;\l WindowStatus \&gt;" alt="" coords="236,93,369,134"/>
-<area shape="rect" id="node6" href="$classpcs_1_1Data_1_1ObjectUID.html" title="Base class that creates a 64&#45;bit unique ID. " alt="" coords="228,159,377,185"/>
-<area shape="rect" id="node7" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; ObjectUID, U64 \&gt;" alt="" coords="17,151,157,193"/>
-</map>

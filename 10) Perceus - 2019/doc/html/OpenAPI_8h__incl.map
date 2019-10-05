@@ -1,8 +1,0 @@
-<map id="include/Perceus/Core/Graphics/Rendering/OpenAPI.h" name="include/Perceus/Core/Graphics/Rendering/OpenAPI.h">
-<area shape="rect" id="node2" href="$RenderAPI_8h.html" title="RenderAPI.h" alt="" coords="315,95,413,121"/>
-<area shape="rect" id="node3" href="$Singleton_8h.html" title="Perceus/Data/Singleton.h" alt="" coords="5,169,176,196"/>
-<area shape="rect" id="node4" href="$Matrix_8h.html" title="Perceus/Data/Matrix.h" alt="" coords="201,169,354,196"/>
-<area shape="rect" id="node7" href="$Color_8h.html" title="Perceus/Data/Color.h" alt="" coords="378,169,526,196"/>
-<area shape="rect" id="node8" href="$Inc_8h.html" title="Perceus/Data/Inc.h" alt="" coords="550,169,685,196"/>
-<area shape="rect" id="node5" href="$Vector_8h.html" title="Vector.h" alt="" coords="242,244,313,271"/>
-</map>

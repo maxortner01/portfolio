@@ -1,6 +1,0 @@
-make raceclient only open when game is open
-preferences :
-  choose whch to open when game starts
-  choose whether or not to open them on game start
-
-pedal matplotlib with throttle(red), brake(blue), clutch(green), scrolling to the left as time passes

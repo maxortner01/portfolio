@@ -1,6 +1,0 @@
-<map id="pcs::Shader" name="pcs::Shader">
-<area shape="rect" id="node2" href="$classpcs_1_1rend_1_1RenderObject.html" title="Class for retreiving the currently selected render API. " alt="" coords="279,7,443,33"/>
-<area shape="rect" id="node3" href="$structpcs_1_1rend_1_1RenderSettings.html" title="Container for choosing various API types. " alt="" coords="5,7,180,33"/>
-<area shape="rect" id="node4" href="$classpcs_1_1Data_1_1ObjectID.html" title="pcs::Data::ObjectID\l\&lt; Shader \&gt;" alt="" coords="291,58,430,99"/>
-<area shape="rect" id="node5" href="$classpcs_1_1Data_1_1Status.html" title="pcs::Data::Status\&lt;\l ShaderStatus \&gt;" alt="" coords="294,123,427,165"/>
-</map>
