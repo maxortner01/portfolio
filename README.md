@@ -1,8 +1,9 @@
-# Differential Fields
+# 3D Graphing
 
-My interests during this part of my life drifted from programming into mathematics, then back to programming when I found a mathematical application for some programming. I made a simple python
-script to render elds dened by a differential equation, and used the created vector field to simulate particles moving in a closed system.
+I had too much fun doing the 2D graphing that I extended it in the 3D realm with my then second iteration of my 3D rendering engine called Ansel. It allows you to make a 2D or 3D equation and graph it in a 3D environment. It allows you to make 3D shapes that are dened by equations.
 
 ## Images
 
-![](imgs/Diff&#32;Fields.png)
+![](imgs/Graphing.png)
+
+Plotting two separate plots that utilize a 3D equation for each axis.
