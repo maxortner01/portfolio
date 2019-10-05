@@ -1,0 +1,28 @@
+{
+    "alwaysopen": 0, 
+    "patched": [
+        "pCARS2.exe", 
+        "pCARS2AVX.exe", 
+        "D:/SteamLibrary/steamapps/common/assettocorsa/AssettoCorsa.exe", 
+        "D:/SteamLibrary/steamapps/common/DiRT 4/dirt4.exe"
+    ], 
+    "supported-games": [
+        "assettocorsa.exe", 
+        "pcars2.exe", 
+        "pcars2avx.exe", 
+        "dirt4.exe"
+    ], 
+    "odometer": {
+        "GT_Legacy": {
+            "dirt4.exe": 0.06101906483574242, 
+            "pCARS2AVX.exe": 0.218576712919394, 
+            "AssettoCorsa.exe": 0.008621459773388976
+        }, 
+        "GT_Motorsport": {
+            "pCARS2.exe": 0.10018444459199964, 
+            "dirt4.exe": 0.02072954560833929, 
+            "pCARS2AVX.exe": 0.12105889990830168, 
+            "AssettoCorsa.exe": 0.001247500997999458
+        }
+    }
+}
