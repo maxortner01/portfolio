@@ -1,7 +1,8 @@
-# 2D Poker Game
+# Differential Fields
 
-After doing 3D graphics for a while, I took a small break and started focusing my efforts on understanding an efficient architecture for a graphics engine (which is arguably the most important part). Thus came a basic architecture that I continue to use for smooth animations, as well as the general framework for maximizing speed.
+My interests during this part of my life drifted from programming into mathematics, then back to programming when I found a mathematical application for some programming. I made a simple python
+script to render elds dened by a differential equation, and used the created vector field to simulate particles moving in a closed system.
 
 ## Images
 
-![](imgs/Poker.png)
+![](imgs/Diff&#32;Fields.png)
