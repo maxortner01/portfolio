@@ -1,0 +1,25 @@
+\section{mouse.\+cpp}
+\label{mouse_8cpp_source}\index{src/engine/controllers/mouse.\+cpp@{src/engine/controllers/mouse.\+cpp}}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#include "mouse.h"}
+00002 
+00003 vec2 Mouse::getMousePos() \{
+00004     \textcolor{keywordtype}{double} xpos, ypos;
+00005     glfwGetCursorPos(Window::getWindow(), &xpos, &ypos);
+00006 
+00007     \textcolor{keywordflow}{return} vec2(xpos, ypos);
+00008 \}
+00009 
+00010 \textcolor{keywordtype}{void} Mouse::setMousePos(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y) \{
+00011     glfwSetCursorPos(Window::getWindow(), x, y);
+00012 \}
+00013 
+00014 \textcolor{keywordtype}{void} Mouse::hide() \{
+00015     glfwSetInputMode(Window::getWindow(), GLFW\_CURSOR, GLFW\_CURSOR\_HIDDEN);
+00016 \}
+00017 
+00018 \textcolor{keywordtype}{void} Mouse::show() \{
+00019     glfwSetInputMode(Window::getWindow(), GLFW\_CURSOR, GLFW\_CURSOR\_NORMAL);
+00020 \}
+\end{DoxyCode}

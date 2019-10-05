@@ -1,0 +1,18 @@
+#version 440
+
+in layout(location=0) vec3 vertices;
+in layout(location=1) vec3 color;
+
+//in vec4 color;
+
+//attribute vec3 vertices;
+
+uniform mat4 matrix;
+
+out vec3 c;
+
+void main() { 
+	gl_Position = matrix * vec4(vertices.x, vertices.y, vertices.z, 1.0);
+
+	c = color;
+}

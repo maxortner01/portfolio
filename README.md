@@ -1,7 +1,8 @@
-# First Foray in 3D Graphics in C++
+# First 3D Engine
 
-This project was the first time I created something worth looking at in C++. The graphics are rendered using a 2D framework called SFML. All the calculations and matrix transformations are written myself from scratch. This includes the entire rendering pipeline, and algorithms and sorting required to determine the order at which to render each triangle.
+After my previous attempts in 3D graphics, I finally moved from the theory and into practice. This was the first time I stream-lined my OpenGL usage as well. This time I focused on memory management in
+terms of objects that needed to be rendered, as well as using polymorphism to expand the capabilities of the engine. This was the first time I was able to move passed boiler-plate rendering code and focus on more over-arching things like infinite world generation and conservation of memory.
 
 ## Images
 
-![](imgs/mountains.png)
+![](imgs/Engine&#32;1.png)

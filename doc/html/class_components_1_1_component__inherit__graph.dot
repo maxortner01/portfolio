@@ -1,0 +1,12 @@
+digraph "Components::Component"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="Components::Component",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Components::Color",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_components_1_1_color.html",tooltip="Simple handler for storing color information. "];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Components::Model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_components_1_1_model.html",tooltip="Handles vertex data and rendering Once instanciated with vertex data, it loads the GPU buffer and ren..."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Components::Transform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_components_1_1_transform.html"];
+}
